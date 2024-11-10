@@ -32,13 +32,18 @@ DATA_DIR.mkdir(exist_ok=True)
 
 app = FastAPI()
 
-# Add CORS middleware
+# Update CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Your frontend URL
+    allow_origins=[
+        "http://localhost:3000",  # Local development
+        "https://port-state-control.vercel.app",  # Your Vercel domain
+        "https://port-state-control-git-main-flipbytes-dk.vercel.app",  # Preview deployments
+        "https://port-state-control-flipbytes-dk.vercel.app"  # Other possible Vercel URLs
+    ],
     allow_credentials=True,
-    allow_methods=["*"],  # Allows all methods
-    allow_headers=["*"],  # Allows all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Initialize LlamaParse with specific PSC parsing instructions
