@@ -1,11 +1,4 @@
 fastapi
-python-multipart
-uvicorn[standard]
-llama-index>=0.9.48
-llama-parse>=0.1.4
+uvicorn
 python-dotenv
-pydantic
-groq>=0.3.0
-nest-asyncio
-logging
-supabase==2.3.1 
+# Add any other dependencies your project needs

@@ -13,8 +13,7 @@
   <a href="#features">Features</a> •
   <a href="#tech-stack">Tech Stack</a> •
   <a href="#installation">Installation</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#environment-setup">Environment Setup</a>
+  <a href="#usage">Usage</a> 
 </p>
 
 ## About

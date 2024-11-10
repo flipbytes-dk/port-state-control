@@ -1,366 +1,208 @@
-# REPORT OF INSPECTION IN ACCORDANCE WITH THE PARIS MEMORANDUM OF UNDERSTANDING ON PORT STATE CONTROL*
 
-FORM A
+DIRECTORATE OF PORTS AND COASTS
+Management Surveys and Inspections
+Rua Teófilo Otoni, 4
+Rio de Janeiro, RJ - Brazil - CEP 20.090-070
+Telephone: +55 21 2104-5678 / +55 21 2104-6690
+e-mail: dpc.gevi@marinha.mil.br
+http://www.marinha.mil.br/dpc
 
-- Reporting Authority: Scheepvaartcontrole Antwerpen
-- Telephone: +32 3 229 00 30
-- Email: PSC@mobilit.fgov.be
+FORM A/1
 
-- Address: FPS Mobility – DG Shipping
-  Port State Control
-  Entrepotplaats 1 bus 7
-  2000 Antwerpen
-  Belgium
-- Website:
+Copy to: Master                                If ship is detained, copy to: Flag State
+        Head office                                                      IMO
+        PSCO                                                            Recognized organization, if applicable
 
-## SHIP PARTICULARS
-| Field | Value |
-|-------|--------|
-| Name | MARI BOYLE |
-| Flag | Norway |
-| Type | Oil tanker/Chemical tanker |
-| Call Sign | |
-| IMO Number | 9732979 |
-| MMSI Number | |
-| Date Keel Laid/Major Conv. | 24/12/2015 |
-| Deadweight | |
-| Gross Tonnage | 29700 |
-| Old Tonnage | |
-| Main Engine (KW) | 10320 |
-| Emission Abatement Method | |
+INSPECTION REPORT
 
-## ISM COMPANY
-| Field | Value |
-|-------|--------|
-| Name | Scorpio Marine Management |
-| Address | |
-| City | |
-| IMO Company Number | 5562457 |
-| Country | India |
+According to the Latin American Agreement on Port State Control - Viña del Mar Agreement & 
+IMO resolution A.1155(32)
 
-## MLC SHIPOWNER
-| Field | Value |
-|-------|--------|
-| Name | |
-| Address | |
-| City | |
-| Country | |
+SHIP'S PARTICULARS:
+.1  Name of ship: STI LOBELIA                    .2  Flag of ship: MARSHALL ISLANDS
+.3  Type of ship: OIL TANKER                     .4  Call sign: V7-A6C61
+.5  IMO Number: 9832223                          .6  Gross tonnage: 62228
+.7  Date Keel laid/major conversion commenced: 06.10.2018  .8  Deadweight (where applicable): 110,394
+.9  Recognized organization responsible for issuance of class certificates: ABS
+.10 Recognized organization responsible for issuance of certificates on behalf of the flag State: ABS
+.11 Full particulars of company (identical to particulars as in the ISM DOC) (*): SCORPIO MARINE MANAGEMENT (INDIA) PRIVATE LTD / 44 SECOND HOUSE, SION (E), MUMBAI - INDIA (ISM)
+.12 Registered owner (from CSR) (*): STI LOBELIA SHIPPING COMPANY LIMITED; ADDRESS: TRUST COMPANY COMPLEX, MARSHALL ISLANDS
+.13 Name and address of charterer (from CSR): N/A
 
-*) This inspection report has been issued solely for the purpose of informing the master and other port States that an inspection by the port State, mentioned in the heading, has taken place. This inspection report cannot be construed as a seaworthiness certificate in excess of the certificates the ship is required to carry.
+□ Bareboat charter          □ Time charter          ☒ Voyage charter
+□ First charterer           □ Last charterer        □ Not aplicable
 
-**) Masters, Shipowners and/or Operators are advised that detailed information on the inspection will be reported to the appropriate authorities and organisations and is subject to publication.
+INSPECTION'S PARTICULARS (*):
+.14 Date of inspection: 18 MAY 2024               .15 Place of inspection: ITAQUI - SLZ - MA
+.16 If vessel is detained (date of issue notice of detention): -/-    .17 Date of release detention (*): -/-
+.18 Type of inspection:
+□ Initial inspection        ☒ More detailed inspection             □ Concentrated Inspection Campaigns
+.19 Areas inspected:
+☒ Navigation bridge        □ Cargo hold(s)/tank(s)               □ Ballast tank(s)
+☒ Engine room             ☒ Steering-gear room                   ☒ Accommodation/Galley
+□ Passenger spaces        □ Car deck                             ☒ Others
+.20 Operational Controls (if has):
+☒ Abandon ship            ☒ Fire drill                           ☒ Emergency fire pump
+☒ Oily water separator    ☒ Emergency generator                  ☒ Steering-gear emergency
+☒ Communications equipment ☒ Damage control                      ☒ Others
 
-***) "Outstanding deficiencies" are listed for information only and will not be taken into account for the calculation of the Ship Risk Profile and Company performance.
+(*) To be completed in the event of a detention
 
-Page 1 of 7
+(**) Masters, shipowners and/or operators are advised that detailed information on the inspection may be subject to publication (https://alvi.prefecturanaval.gob.ar).
+
 
 ---
 
-# REPORT OF INSPECTION IN ACCORDANCE WITH THE PARIS MEMORANDUM OF UNDERSTANDING ON PORT STATE CONTROL*
+DIRECTORATE OF PORTS AND COASTS
+Management Surveys and Inspections
+FORM A/2
 
-FORM A
+Name of ship: STI LOBELIA          IMO Number: 9838228
 
-| Name Of Ship | IMO Number | Date Of Report | Place Of Inspection |
-|--------------|------------|----------------|-------------------|
-| MARI BOYLE | 9732979 | 04/10/2024 | Antwerpen |
+## 21 Relevant certificates
 
-## CHARTERER (only ships carrying liquid or solid cargoes in bulk, pref. 1st charterer record)
-| Name | City | Country |
-|------|------|---------|
-| Waterfront Shipping Co.Ltd. | | Canada |
+| Title | Issuing authority | Issue | Expiry |
+|-------|------------------|--------|---------|
+| 1. Safety Construction | ABS | 14.01.2024 | 02.01.2029 |
+| 2. Safety Equipment | ABS | 14.01.2024 | 02.01.2029 |
+| 3. Safety Radio | ABS | 14.01.2024 | 02.01.2024 |
+| 4. IOPP | ABS | 14.01.2024 | 02.01.2029 |
+| 5. IAPP - Air pollution | ABS | 14.01.2024 | 02.01.2029 |
+| 6. ISPP - Sewage | ABS | 14.01.2024 | 02.01.2029 |
+| 7. Load Line | ABS | 14.01.2024 | 02.01.2029 |
+| 8. DOC - ISM | ABS | 25.11.2022 | 28.01.2023 |
+| 9. SMC - ISM | ABS | 09.03.2023 | 26.06.2025 |
+| 10. ISSC - Security | ABS | 09.03.2023 | 26.06.2025 |
+| 11. Safe Manning | FLAG | 03.02.2023 | - |
+| 12. Tonnage | ABS | 23.02.2023 | - |
+| 13. Anti-Fouling | ABS | 14.01.2024 | - |
+| 14. Ballast Water | ABS | 14.01.2024 | 02.01.2029 |
+| 15. MLC | ABS | 09.03.2023 | 26.06.2025 |
+| 16. Class | ABS | 14.01.2024 | 02.01.2029 |
+| 17. Registry | FLAG | 11.12.2023 | - |
+| 18. NLS / COF | - | - | - |
+| 19. Dangerous Goods | - | - | - |
 
-☐ Demise Charter    ☒ Time Charter    ☐ Voyage Charter
+## d) Information on last intermediate or annual survey
 
-Name and signature of master to confirm the receipt of the inspection report and to certify that the information on charterer is correct:
-| Name | Signature |
-|------|-----------|
-| SANJAY ICLIMIL | [Signature present] |
+| Date of survey | Surveying authority | Port / Country |
+|---------------|---------------------|----------------|
+| 09.03.2023 | ABS | MAP TA PHUT - Thailand |
+| 09.03.2023 | ABS | MAP TA PHUT - Thailand |
+| 09.03.2023 | ABS | MAP TA PHUT - Thailand |
 
-## Classification Society(ies) responsible for issuance of class certificates
-| Issuing Entity | Date Of Issue | Date Of Expiry |
-|----------------|---------------|----------------|
-| DNV AS | 19/10/2021 | 11/08/2026 |
+22. Deficiencies: ☐ Yes (see attached Form B) ☒ No
+23. Detained: ☐ Yes ☒ No
+24. Supporting documentation: ☐ Yes ☒ No
+25. Last Port: KUOK FA KRAD - 26. Next Port: FUJAIRAH - 27. ETA: -
 
-## Recognised Organization(s) responsible for issuance of certificates on behalf of the flag State
-| Issuing Entity |
-|----------------|
-| American Bureau of Shipping |
-| DNV GL AS |
-| DNV AS |
-
-## INSPECTION PARTICULARS **
-| Date Of First Visit | Place Of Inspection |
-|--------------------|--------------------|
-| 04/10/2024 | Antwerpen |
-
-| Date Of Report | If detained: Date Of Issue Of Detention No |
-|----------------|------------------------------------------|
-| 04/10/2024 | |
-
-### Type Of Inspection
-☐ Initial Inspection    ☒ More Detailed Inspection    ☐ Expanded Inspection    ☒ CIC
-
-| Checked | Operational Control (if any) | Additional Comment |
-|---------|---------------------------|-------------------|
-| ☐ | Other | |
-
-*) This inspection report has been issued solely for the purpose of informing the master and other port States that an inspection by the port State, mentioned in the heading, has taken place. This inspection report cannot be construed as a seaworthiness certificate in excess of the certificates the ship is required to carry.
-
-**) Masters, Shipowners and/or Operators are advised that detailed information on the inspection will be reported to the appropriate authorities and organisations and is subject to publication.
-
-***) "Outstanding deficiencies" are listed for information only and will not be taken into account for the calculation of the Ship Risk Profile and Company performance.
-
-Page 2 of 7
+PORT STATE PARTICULARS:
+Address of office issued: CAPITANIA DOS PORTOS DO MARANHAO
+Telephone/Fax: TEL: (98) 2107-0128- (98) 99144-6826
+E-mail: cpma.gevi@marinha.mil.br
 
 ---
 
-# REPORT OF INSPECTION IN ACCORDANCE WITH THE PARIS MEMORANDUM OF UNDERSTANDING ON PORT STATE CONTROL*
+# REPORT OF THE IMPOSITION OF A CONTROL AND COMPLIANCE MEASURING TO ENHANCE MARITIME SECURITY
+# BRASILIAN MARITIME AUTHORITY NORM FOR THE MANAGEMENT OF SHIPS BALLAST WATER (NORMAM-20/DPC).
 
-FORM A
+DIRECTORATE OF PORTS AND COST  
+Rua Teófilo Otoni, 4  
+Rio de Janeiro, RJ – Brasil  
+CEP: 20080-070  
+Telefone: (+55) (21) 2104-5402  
+Telefax: (+55) (21) 2104-5228
 
-| Name Of Ship | IMO Number | Date Of Report | Place Of Inspection |
-|--------------|------------|----------------|-------------------|
-| MARI BOYLE | 9732979 | 04/10/2024 | Antwerpen |
+Copy to:
+- Master
+- Head Office
+- PSCO
 
-| Checked | Drills |
-|---------|--------|
-| □ | Abandon ship drill |
-| □ | Damage Control drill |
-| □ | Enclosed space entry drill |
-| ☒ | Emergency steering drill |
-| □ | Fire drill |
-| □ | Man Over Board drill |
-| □ | Rescue Boat drill |
-| □ | SMPEP drill |
-| □ | SOPEP drill |
+1. Name of reporting authority: Directorate of Port and Coasts
+2. Date of inspection: 18 MAR 2024
+3. Place of inspection: ITAQUI - SLZ - MA
+4. Name of the ship: STI LOBELIA
+5. Flag of the ship: MARSHALL ISLAND
+6. Type of ship: OIL TANKER
+7. Call sign: V7A6M
+8. IMO number: 9825225
+9. Gross tonnage: 63328
+10. Year of build: 06.04.2019
+11. Date of the last IOPP renewal survey: 14/01/2024
+12. Ballast water Management Plan – Recognize Organization: APPROVED by ABS IN 26.09.2018
+13. Last port of call: KHOR FAKKAN - UAE
+14. Last port of ballast: N/A
+15. De-ballast at this port: ( ) YES (X) NO
+16. Standart of ballast WATER MANAGEMENT: ( ) D1 (x) D2
+17. If D2, Name of ballast water treatment system: SAMSUNG SP-107
+    - Manufacturer: SAMSUNG HEAVY INDUSTRIES CO LTD
+    - Date of installation: 03/04/2019
 
-| Checked | Areas Inspected | Additional Comment |
-|---------|-----------------|-------------------|
-| ☒ | Accommodation and galley | |
-| □ | Ballast tank(s) - internal | |
-| □ | Ballast tank(s) - from manhole | |
-| □ | Vehicle deck | |
-| □ | Cargo area | |
-| ☒ | Engine room | |
-| ☒ | Navigation bridge | |
-| ☒ | Decks and forecastle | |
-| □ | Passenger spaces | |
+18. Non – Conformities (marks as follow: "x" non-conformities, "-" conformity)
+- [-] Ballast Water Management Plan Not Available
+- [-] Ballast Water Reporting Form Not Available
+- [-] Fails in fulfilling Reporting Forms
+- [-] Ballast Water Record Book not available
+- [-] Ballast Water management requirements not conducted as provid in Chapter 2 of NORMAM-20/DPC
+- [-] Others
 
-*) This inspection report has been issued solely for the purpose of informing the master and other port States that an inspection by the port State, mentioned in the heading, has taken place. This inspection report cannot be construed as a seaworthiness certificate in excess of the certificates the ship is required to carry.
+19. Descriptio of Non-Conformity:
 
-**) Masters, Shipowners and/or Operators are advised that detailed information on the inspection will be reported to the appropriate authorities and organisations and is subject to publication.
+20. Specific control measures (marks as follow: "x" actions taken, "-" no actions taken)
+- [-] None
+- [-] Cargo operation modified or stopped
+- [-] Ship ordered to leave the for Ballast operation
+- [ ] Fine
+- [ ] Notice
+- [ ] Ship detained
 
-***) "Outstanding deficiencies" are listed for information only and will not be taken into account for the calculation of the Ship Risk Profile and Company performance.
+21. Remark:
 
-Page 3 of 7
+22. Issuing Office (OM): Capitania dos Portos do Maranhão (CPMA)  
+TEL (+55) (98) 2107 0128  
+e-mail: cpma.gevi@marinha.mil.br
 
----
-
-# REPORT OF INSPECTION IN ACCORDANCE WITH THE PARIS MEMORANDUM OF UNDERSTANDING ON PORT STATE CONTROL*
-
-FORM A
-
-| Name Of Ship | IMO Number | Date Of Report | Place Of Inspection |
-|--------------|------------|----------------|-------------------|
-| MARI BOYLE | 9732979 | 04/10/2024 | Antwerpen |
-
-☒ Steering-room
-
-## RELEVANT CERTIFICATES
-Information on last intermediate, periodical or annual
-
-| Title Certificate | Issuing Authority | Date Of Issue | Date Of Expiry | Date Of Survey | Surveying Authority | Country |
-|-------------------|-------------------|---------------|----------------|----------------|-------------------|----------|
-| Bunker Oil Pollution Damage | Norway | 11/01/2024 | 20/02/2025 | | | |
-| Cargo Ship Safety Construction | DNV | 02/09/2024 | 11/08/2026 | | | |
-| Cargo Ship Safety Equipment | DNV | 11/08/2024 | 11/08/2026 | | | |
-| Cargo Ship Safety Radio | DNV | 11/08/2024 | 11/08/2026 | 11/08/2024 | DNV | United States |
-| Civil Liability for Oil Pollution Damage | Norway | 11/01/2024 | 20/02/2025 | | | |
-| Continuous Synopsis Record[3] | Norway | 09/07/2024 | | | | |
-| Dangerous Chemicals in Bulk (ICoF/IBC Code) | DNV | 23/08/2021 | 11/08/2026 | | | |
-| Document of Compliance | ABS | 25/11/2022 | 28/01/2028 | 22/11/2023 | ABS | India |
-| Engine International Air Pollution Prevention[173063-0012] | DNVGL | 17/05/2016 | | | | |
-| Engine International Air Pollution Prevention[173066-0005] | DNVGL | 20/05/2016 | | | | |
-| Engine International Air Pollution Prevention[173063-0013] | DNVGL | 17/05/2016 | | | | |
-| Engine International Air Pollution Prevention[173063-0011] | DNVGL | 17/05/2016 | | | | |
-| International Air Pollution Prevention | DNV | 23/08/2021 | 11/08/2026 | | | |
-| International Anti-Fouling System | DNV | 23/08/2021 | | | | |
-
-*) This inspection report has been issued solely for the purpose of informing the master and other port States that an inspection by the port State, mentioned in the heading, has taken place. This inspection report cannot be construed as a seaworthiness certificate in excess of the certificates the ship is required to carry.
-
-**) Masters, Shipowners and/or Operators are advised that detailed information on the inspection will be reported to the appropriate authorities and organisations and is subject to publication.
-
-***) "Outstanding deficiencies" are listed for information only and will not be taken into account for the calculation of the Ship Risk Profile and Company performance.
-
-Page 4 of 7
+Port State Control Officer Name: [Signature]  
+Master: [Signature and Stamp]
 
 ---
 
-# REPORT OF INSPECTION IN ACCORDANCE WITH THE PARIS MEMORANDUM OF UNDERSTANDING ON PORT STATE CONTROL*
+# Vessel Port Performance
 
-FORM A
+Vessel: STI LOBELIA        Port: SAO LUIS, BRAZIL        Date: ___________
+Terminal: ___________
 
-| Name Of Ship | IMO Number | Date Of Report | Place Of Inspection | Antwerpen |
-|--------------|------------|----------------|-------------------|------------|
-| MARI BOYLE | 9732979 | 04/10/2024 | | |
+Dear Sirs,
 
-| Certificate/Document | Issuing Authority | Issue Date | Expiry Date | Last Annual/Intermediate | Authority | Place |
-|---------------------|-------------------|------------|-------------|------------------------|-----------|--------|
-| International Ballast Water Management | DNV | 02/03/2023 | 11/08/2026 | 08/08/2024 | DNV | United States |
-| International Energy Efficiency Certificate | DNV | 03/08/2023 | | | | |
-| International Oil Pollution Prevention (IOPP) | DNV | 23/08/2021 | 11/08/2026 | | | |
-| International Sewage Pollution Prevention | DNV | 23/08/2021 | 11/08/2026 | | | |
-| International Ship Security | DNV | 10/07/2024 | 10/01/2025 | | | |
-| Load Line | DNV | 22/07/2021 | 11/08/2026 | 08/08/2024 | DNV | United States |
-| Maritime Labour Certificate | DNV | 10/07/2024 | 10/01/2025 | | | |
-| Minimum Safe Manning Document | Norway | 04/07/2024 | | | | |
-| Nairobi International Convention on the Removal of Wrecks | Marshall Islands | 11/01/2024 | 20/02/2025 | | | |
-| Safety Management Certificate | DNV | 10/07/2024 | 10/01/2025 | | | |
-| Tonnage | DNV | 26/07/2021 | | | | |
+In order for us to evaluate how well we meet the requirements of the port our vessels visit, please assist us by taking a few moments to complete the following questionnaire:
 
-## INSPECTION ACTIONS
+| Question | YES | NO |
+|----------|-----|-----|
+| 1. Was the performance of the Ship and Crew up to mark for your port? | ✓ | |
+| 2. Did the ship fully comply with all legislation whilst at your port? | ✓ | |
+| 3. Were the ship's communications correct, prompt and understandable? | ✓ | |
+| 4. Were the ship's staff co-operative, contactable and of smart appearance? | ✓ | |
+| 5. Did the vessel's cargo operation performed safely? | ✓ | |
+| 6. Do the vessel's crew well aware of safety and use of safety equipments on board? | ✓ | |
+| 7. Were any problems encountered during this visit? (If "Yes", please describe briefly below) | | ✓ |
+| 8. Are there any outstanding actions from vessel's previous visits to your port? | | ✓ |
+| 9. Would you like to see this vessel return to handle another cargo at your terminal? | ✓ | |
 
-| Checked | Ship related inspection action taken (if any) | Additional Comment |
-|---------|------------------------------------------|-------------------|
-| □ | Inspection suspended | |
-| □ | Dismissed on AFS grounds | |
-| □ | Excluded on AFS grounds | |
-| □ | Vessel expelled on other grounds | |
-| □ | Vessel expelled on security grounds | |
-| □ | Marpol investigation of contravention of discharge provision | |
+10. Please provide an overall rating of the vessel compared to others calling at your terminal?
+(Please tick appropriate box below)
 
-*) This inspection report has been issued solely for the purpose of informing the master and other port States that an inspection by the port State, mentioned in the heading, has taken place. This inspection report cannot be construed as a seaworthiness certificate in excess of the certificates the ship is required to carry.
+| Unacceptable (1) | Poor (2) | Average (3) | Above Average (4) | Excellent (5) |
+|------------------|----------|-------------|-------------------|---------------|
+|                  |          |             |                   | ✓             |
 
-**) Masters, Shipowners and/or Operators are advised that detailed information on the inspection will be reported to the appropriate authorities and organisations and is subject to publication.
+Any additional comments/improvements:
+"During our pre inspection carried out on March 18th, 2024 we found vessel in excellent condition and good support by crew member and Master."
 
-***) "Outstanding deficiencies" are listed for information only and will not be taken into account for the calculation of the Ship Risk Profile and Company performance.
+What does this vessel have to do to achieve an excellent rating?
 
-Page 5 of 7
+Name: ___________  
+Title: PSC INSPECTOR  
+Signature: ___________  
+Contact Nbr: ___________
 
----
-
-# REPORT OF INSPECTION IN ACCORDANCE WITH THE PARIS MEMORANDUM OF UNDERSTANDING ON PORT STATE CONTROL*
-
-FORM A
-
-| Name Of Ship | IMO Number | Date Of Report | Place Of Inspection |
-|--------------|------------|----------------|-------------------|
-| MARI BOYLE | 9732979 | 04/10/2024 | Antwerpen |
-
-| Checked | Ship related reporting action taken (if any) | Additional Comment |
-|---------|-------------------------------------------|-------------------|
-| □ | Coastal State informed | |
-| □ | ILO informed | |
-| □ | Other authority informed | |
-| □ | Observations to inspection | |
-| □ | Shipowner and seafarer organization informed | |
-| □ | Overriding Factor | |
-| □ | Flag State requested to submit action plan within deadline | |
-| □ | Next port informed | |
-| □ | Flag State informed | |
-| □ | RO informed | |
-
-| | No | Yes |
-|-------------------|----|--------------------|
-| DEFICIENCIES | □ | ☒ (see attached FORM B) |
-| OUTSTANDING DEFICIENCIES*** | ☒ | □ (see attached FORM B) |
-| SUPPORTING DOCUMENTATION | ☒ | □ (see annex) |
-
-*) This inspection report has been issued solely for the purpose of informing the master and other port States that an inspection by the port State, mentioned in the heading, has taken place. This inspection report cannot be construed as a seaworthiness certificate in excess of the certificates the ship is required to carry.
-
-**) Masters, Shipowners and/or Operators are advised that detailed information on the inspection will be reported to the appropriate authorities and organisations and is subject to publication.
-
-***) "Outstanding deficiencies" are listed for information only and will not be taken into account for the calculation of the Ship Risk Profile and Company performance.
-
-Page 6 of 7
-
----
-
-# REPORT OF INSPECTION IN ACCORDANCE WITH THE PARIS MEMORANDUM OF UNDERSTANDING ON PORT STATE CONTROL*
-
-FORM A
-
-| Name Of Ship | IMO Number | Date Of Report | Place Of Inspection |
-|--------------|------------|----------------|-------------------|
-| MARI BOYLE | 9732979 | 04/10/2024 | Antwerpen |
-
-## PORT STATE PARTICULARS
-
-| Head Office/District Office | Telephone | |
-|---------------------------|------------|---|
-| Scheepvaartcontrole Antwerpen | +32 3 229 00 30 | |
-
-| Address | Email | Website |
-|---------|--------|----------|
-| FPS Mobility – DG Shipping<br>Port State Control<br>Entrepotsplaats 1 bus 7<br>2000 Antwerpen<br>Belgium | PSC@mobilit.fgov.be | |
-
-| Name(s) of duly authorized PSCO(s) of reporting authority | Signature | Visit Date |
-|--------------------------------------------------------|-----------|------------|
-| Karl SCHROYENS | [Signature] | 04/10/2024 |
-
-This report must be retained on board for a period of at least three years and must be readily available for consultation by Port State Control Officers at all times.
-
-----
-
-*) This inspection report has been issued solely for the purpose of informing the master and other port States that an inspection by the port State, mentioned in the heading, has taken place. This inspection report cannot be construed as a seaworthiness certificate in excess of the certificates the ship is required to carry.
-
-**) Masters, Shipowners and/or Operators are advised that detailed information on the inspection will be reported to the appropriate authorities and organisations and is subject to publication.
-
-***) "Outstanding deficiencies" are listed for information only and will not be taken into account for the calculation of the Ship Risk Profile and Company performance.
-
-Page 7 of 7
-
----
-
-# REPORT OF INSPECTION IN ACCORDANCE WITH THE
-# PARIS MEMORANDUM OF UNDERSTANDING ON PORT STATE CONTROL
-
-Name of Ship: MARI BOYLE                                IMO number: 9732979
-Date of report: 04/10/2024                             Place of Inspection: Antwerpen
-
-## Concentrated Inspection Campaign
-
-CIC Name: CIC on MLC, 2006 in 2024                     Start date: 01/09/2024    End date: 01/12/2024
-
-| Question | Answer |
-|----------|---------|
-| Is the seafarer given a SEA signed by both the seafarer and the shipowner or a representative of the shipowner? | YES |
-| Is the seafarer able to access information regarding their employment conditions on board? | NO |
-| Are standard form of seafarers' employment agreements and parts of any applicable collective bargaining agreements subject to port State control under Reg.5.2, available in English? | YES |
-| Does the seafarers' employment agreement include all the required elements specified in the MLC, 2006? | YES |
-| Do particulars included in the seafarers' employment agreement comply with the MLC, 2006 requirements? | YES |
-| Are wage or salary payments made to the seafarer at no greater than monthly intervals? | YES |
-| Have seafarers been given a status of accounts and wages paid on at least a monthly basis? | YES |
-| Are wage or salary payments in accordance with any applicable CBA or SEA? | YES |
-| If payments made to a seafarer include deductions, are they in accordance to the MLC, 2006? | YES |
-| Is a certificate or documentary evidence of financial security, issued by the financial security provider, available on board in the event of compensation for death and long-term disability? | YES |
-| Is a certificate or documentary evidence of financial security, issued by the financial security provider, available on board in the event of the repatriation? | YES |
-
-Inspection report ID: InspectionReport-9732979-20241004-v3.pdf
-
----
-
-# REPORT OF INSPECTION IN ACCORDANCE WITH THE PARIS MEMORANDUM OF UNDERSTANDING ON PORT STATE CONTROL
-
-FORM B
-
-| Name Of Ship | IMO Number | Date Of Report | Place Of Inspection |
-|--------------|------------|----------------|-------------------|
-| MARI BOYLE | 9732979 | 04/10/2024 | Antwerpen |
-
-## DEFICIENCIES FOUND AND FOLLOW UP ACTIONS
-
-| Nr. | Code | Defective Item | Nature Of Defect* | Convention Reference | Action Taken | Due Date | Ground For Detention | Accidental Damage** | RO resp. | ISM Related | Additional Comments |
-|-----|------|----------------|------------------|---------------------|--------------|-----------|---------------------|-------------------|-----------|--------------|-------------------|
-| 1 | 01331 | Collective bargaining agreement | Not Available | MLC 2006 Title 2 - MLC 2006 *** / MLC 2018 Amendment / Standard A2.1.2 | 10 - Rectified | | □ | □ | □ | □ | Referring to the CIC on MLC (Q2): - The applicable CBAs are not publicly available on board. The CBA's are available only in the master's office. After this was noticed, the master made sure the CBA's are publicly available to all seafarers. - During verification of the CBA's it was noticed the CBA for Indian officer was incomplete. At least the wage scales for this group of sailors were missing. Master contacted the company, and the wage scale was made available. |
-| 2 | 04101 | Public address system | Missing | SOLAS ch. III - SOLAS 2006 Amend / Chapter III / Reg. 6.4 | 17 - To be rectified before departure | 04/10/2024 | □ | □ | □ | □ | Muster stations on the upper deck, both SB and PS are not provided with a PA or talk back system. |
-
-| Name(s) of duly authorized PSCO(s) of reporting authority | Signature | Visit Date |
-|------------------------------------------------------|-----------|------------|
-| Karl SCHROYENS | [Signature] | 04/10/2024 |
-
-*) This inspection was not a full survey and deficiencies listed may not be exhaustive. In the event of a detention, it is recommended that a full survey is carried out. All deficiencies should be rectified before an application for re-inspection is made.
-
-**) Deficiencies marked as Accidental Damage are not taken into account for calculating the company performance and Ship Risk Profile.
-
-Page 1 of 1
+*By analyzing these replies we aim to match our vessels' performance with the requirements of the terminals and customers worldwide. Your help in this matter is therefore very important and we thank you for your time and attention. Please return this form to the Master, together with any comments you may like to add.*

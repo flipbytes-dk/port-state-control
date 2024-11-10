@@ -83,14 +83,7 @@ parser = LlamaParse(
     Preserve all numerical values, dates, and codes exactly as they appear in the document.
     Process all pages of the document and combine the information into a single coherent output. Names might appear on rubber stamped pages, so be sure to extract them from all pages. 
     """,
-    premium_mode=True,
-    # max_items_per_page=50,  # Increase items per page
-    # include_page_breaks=True,  # Include page break information
-    # collapse_bullets_and_numbering=False,  # Preserve bullet points and numbering
-    # language="en",  # Specify language
-    # use_vendor_multimodal_model=True,
-    # vendor_multimodal_model_name="openai-gpt4o",
-    # vendor_multimodal_api_key=os.getenv("OPENAI_API_KEY")   
+    premium_mode=True 
 )
 
 # Initialize Groq LLM
