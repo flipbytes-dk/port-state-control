@@ -2,4 +2,8 @@ fastapi
 uvicorn
 python-dotenv
 pydantic
+llama-parse
+llama-index
+nest-asyncio
+groq
 # Add any other dependencies your project uses
