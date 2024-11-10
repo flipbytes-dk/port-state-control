@@ -1,0 +1,2353 @@
+2024-11-09 13:16:24 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-09 13:16:24 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 13:16:24 - app.main - ERROR - Error parsing PDF: Detected nested async. Please use nest_asyncio.apply() to allow nested event loops.Or, use async entry methods like `aquery()`, `aretriever`, `achat`, etc.
+2024-11-09 13:16:24 - app.main - ERROR - Error processing upload: Detected nested async. Please use nest_asyncio.apply() to allow nested event loops.Or, use async entry methods like `aquery()`, `aretriever`, `achat`, etc.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/llama_index/core/async_utils.py", line 33, in asyncio_run
+    return loop.run_until_complete(coro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1511, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1504, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1377, in uvloop.loop.Loop.run_forever
+  File "uvloop/loop.pyx", line 518, in uvloop.loop.Loop._run
+RuntimeError: this event loop is already running.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/llama_index/core/async_utils.py", line 38, in asyncio_run
+    return asyncio.run(coro)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 153, in upload_inspection_report
+    documents = parser.load_data(temp_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/llama_parse/base.py", line 481, in load_data
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/llama_parse/base.py", line 476, in load_data
+    return asyncio_run(self.aload_data(file_path, extra_info, fs=fs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/llama_index/core/async_utils.py", line 40, in asyncio_run
+    raise RuntimeError(
+RuntimeError: Detected nested async. Please use nest_asyncio.apply() to allow nested event loops.Or, use async entry methods like `aquery()`, `aretriever`, `achat`, etc.
+2024-11-09 13:34:34 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-09 13:34:34 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 13:34:34 - app.main - ERROR - Error parsing PDF: Detected nested async. Please use nest_asyncio.apply() to allow nested event loops.Or, use async entry methods like `aquery()`, `aretriever`, `achat`, etc.
+2024-11-09 13:34:34 - app.main - ERROR - Error processing upload: Detected nested async. Please use nest_asyncio.apply() to allow nested event loops.Or, use async entry methods like `aquery()`, `aretriever`, `achat`, etc.
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/async_utils.py", line 33, in asyncio_run
+    return loop.run_until_complete(coro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1512, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1505, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1379, in uvloop.loop.Loop.run_forever
+  File "uvloop/loop.pyx", line 520, in uvloop.loop.Loop._run
+RuntimeError: this event loop is already running.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/async_utils.py", line 38, in asyncio_run
+    return asyncio.run(coro)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 190, in run
+    raise RuntimeError(
+RuntimeError: asyncio.run() cannot be called from a running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 91, in upload_inspection_report
+    documents = parser.load_data(temp_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_parse/base.py", line 481, in load_data
+    raise e
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_parse/base.py", line 476, in load_data
+    return asyncio_run(self.aload_data(file_path, extra_info, fs=fs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/async_utils.py", line 40, in asyncio_run
+    raise RuntimeError(
+RuntimeError: Detected nested async. Please use nest_asyncio.apply() to allow nested event loops.Or, use async entry methods like `aquery()`, `aretriever`, `achat`, etc.
+2024-11-09 13:56:26 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-09 13:56:26 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 13:56:34 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 13:56:34 - app.main - INFO - Initializing structured data extraction
+2024-11-09 13:56:34 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 13:56:35 - app.main - INFO - Successfully extracted structured data
+2024-11-09 13:56:35 - app.main - ERROR - Error processing upload: 'str' object has no attribute 'ship'
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 136, in upload_inspection_report
+    logger.info(f"Processed report for vessel: {structured_data.ship.name}")
+                                                ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'ship'
+2024-11-09 14:00:24 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-09 14:00:24 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 14:00:32 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 14:00:32 - app.main - INFO - Initializing structured data extraction
+2024-11-09 14:00:32 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 14:00:33 - app.main - INFO - Successfully extracted structured data
+2024-11-09 14:00:33 - app.main - ERROR - Error processing upload: 'str' object has no attribute 'ship'
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 136, in upload_inspection_report
+    "   - Any codes provided\n"
+                                
+AttributeError: 'str' object has no attribute 'ship'
+2024-11-09 14:03:01 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-09 14:03:01 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 14:03:08 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 14:03:08 - app.main - INFO - Initializing structured data extraction
+2024-11-09 14:03:08 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 14:03:09 - app.main - INFO - Successfully extracted structured data
+2024-11-09 14:03:09 - app.main - ERROR - Error processing upload: 'str' object has no attribute 'ship'
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 136, in upload_inspection_report
+    "   - Exact date of inspection\n"
+                                      
+AttributeError: 'str' object has no attribute 'ship'
+2024-11-09 14:04:53 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-09 14:04:53 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 14:05:00 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 14:05:00 - app.main - INFO - Initializing structured data extraction
+2024-11-09 14:05:00 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 14:05:02 - app.main - INFO - Successfully extracted structured data
+2024-11-09 14:05:02 - app.main - ERROR - Error processing upload: 'str' object has no attribute 'ship'
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 136, in upload_inspection_report
+    "   - Exact date of inspection\n"
+                                      
+AttributeError: 'str' object has no attribute 'ship'
+2024-11-09 14:08:29 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-09 14:08:29 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 14:08:36 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 14:08:36 - app.main - INFO - Initializing structured data extraction
+2024-11-09 14:08:36 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 14:08:38 - app.main - INFO - Successfully extracted structured data
+2024-11-09 14:08:38 - app.main - ERROR - Error processing upload: 'str' object has no attribute 'ship'
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 136, in upload_inspection_report
+    "   - Company and registered owner details\n\n"
+                                        ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'ship'
+2024-11-09 14:11:17 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 14:11:17 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 14:11:24 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:11:24 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:11:24 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 14:11:24 - app.main - INFO - Initializing structured data extraction
+2024-11-09 14:11:24 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 14:11:25 - app.main - INFO - Raw response received from LLM
+2024-11-09 14:11:25 - app.main - INFO - Successfully processed report
+2024-11-09 14:11:25 - app.main - INFO - Vessel name: ELEGANT VOYAGER
+2024-11-09 14:11:25 - app.main - INFO - Number of deficiencies: 0
+2024-11-09 14:22:20 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 14:22:20 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 14:22:27 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:22:27 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:22:27 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 14:22:27 - app.main - INFO - Initializing structured data extraction
+2024-11-09 14:22:27 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 14:22:29 - app.main - INFO - Raw response received from LLM
+2024-11-09 14:22:29 - app.main - INFO - Successfully processed report
+2024-11-09 14:22:29 - app.main - INFO - Vessel name: ELEGANT VOYAGER
+2024-11-09 14:22:29 - app.main - INFO - Number of deficiencies: 0
+2024-11-09 14:26:21 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 14:26:21 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 14:26:28 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 14:26:28 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:26:28 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:26:28 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 14:26:28 - app.main - INFO - Initializing structured data extraction
+2024-11-09 14:26:28 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 14:26:29 - app.main - ERROR - Error in data extraction: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01hxdk1cawfxkrqwff8gzy385a` on tokens per minute (TPM): Limit 6000, Requested 6566, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2024-11-09 14:26:29 - app.main - ERROR - Error processing upload: 500: Data extraction failed: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01hxdk1cawfxkrqwff8gzy385a` on tokens per minute (TPM): Limit 6000, Requested 6566, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 199, in upload_inspection_report
+    raw_response = program(report_content=markdown_text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/instrumentation/dispatcher.py", line 311, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/program/function_program.py", line 202, in __call__
+    agent_response = self._llm.predict_and_call(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/instrumentation/dispatcher.py", line 311, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/llms/function_calling.py", line 182, in predict_and_call
+    response = self.chat_with_tools(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/llms/function_calling.py", line 48, in chat_with_tools
+    response = self.chat(**chat_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/instrumentation/dispatcher.py", line 311, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/llms/openai_like/base.py", line 117, in chat
+    return super().chat(messages, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/instrumentation/dispatcher.py", line 311, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/llms/callbacks.py", line 173, in wrapped_llm_chat
+    f_return_val = f(_self, messages, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/llms/openai/base.py", line 355, in chat
+    return chat_fn(messages, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/llms/openai/base.py", line 106, in wrapper
+    return retry(f)(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/tenacity/__init__.py", line 336, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/tenacity/__init__.py", line 475, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/tenacity/__init__.py", line 478, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/llms/openai/base.py", line 429, in _chat
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/openai/_utils/_utils.py", line 275, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/openai/resources/chat/completions.py", line 829, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/openai/_base_client.py", line 1278, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/openai/_base_client.py", line 955, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/openai/_base_client.py", line 1059, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01hxdk1cawfxkrqwff8gzy385a` on tokens per minute (TPM): Limit 6000, Requested 6566, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 223, in upload_inspection_report
+    raise HTTPException(status_code=500, detail=f"Data extraction failed: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Data extraction failed: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-70b-versatile` in organization `org_01hxdk1cawfxkrqwff8gzy385a` on tokens per minute (TPM): Limit 6000, Requested 6566, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2024-11-09 14:30:05 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 14:30:05 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 14:30:11 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 14:30:11 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:30:11 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:30:11 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 14:30:11 - app.main - INFO - Initializing structured data extraction
+2024-11-09 14:30:11 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 14:30:15 - app.main - INFO - Raw response received from LLM
+2024-11-09 14:30:15 - app.main - INFO - Successfully processed report
+2024-11-09 14:30:15 - app.main - INFO - Vessel name: ELEGANT VOYAGER
+2024-11-09 14:30:15 - app.main - INFO - Number of deficiencies: 0
+2024-11-09 14:31:10 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 14:31:10 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 14:31:17 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 14:31:17 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:31:17 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:31:17 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 14:31:17 - app.main - INFO - Initializing structured data extraction
+2024-11-09 14:31:17 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 14:31:21 - app.main - INFO - Raw response received from LLM
+2024-11-09 14:31:21 - app.main - INFO - Successfully processed report
+2024-11-09 14:31:21 - app.main - INFO - Vessel name: ELEGANT VOYAGER
+2024-11-09 14:31:21 - app.main - INFO - Number of deficiencies: 0
+2024-11-09 14:58:00 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 14:58:00 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 14:58:07 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 14:58:07 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:58:07 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 14:58:07 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 14:58:07 - app.main - INFO - Initializing structured data extraction
+2024-11-09 14:58:07 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 14:58:11 - app.main - INFO - Raw response received from LLM
+2024-11-09 14:58:11 - app.main - ERROR - Failed to parse JSON response: Extra data: line 1 column 3 (char 2)
+2024-11-09 14:58:11 - app.main - ERROR - Error in data extraction: 500: Invalid JSON response from LLM
+2024-11-09 14:58:11 - app.main - ERROR - Error processing upload: 500: Data extraction failed: 500: Invalid JSON response from LLM
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 206, in upload_inspection_report
+    data = json.loads(raw_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 3 (char 2)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 210, in upload_inspection_report
+    raise HTTPException(status_code=500, detail="Invalid JSON response from LLM")
+fastapi.exceptions.HTTPException: 500: Invalid JSON response from LLM
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 223, in upload_inspection_report
+    raise HTTPException(status_code=500, detail=f"Data extraction failed: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Data extraction failed: 500: Invalid JSON response from LLM
+2024-11-09 15:01:31 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 15:01:31 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 15:01:38 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 15:01:38 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:01:38 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:01:38 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 15:01:38 - app.main - INFO - Initializing structured data extraction
+2024-11-09 15:01:38 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 15:01:44 - app.main - ERROR - Error in data extraction: Expected at least one tool call, but got 0 tool calls.
+2024-11-09 15:01:44 - app.main - ERROR - Error processing upload: 500: Data extraction failed: Expected at least one tool call, but got 0 tool calls.
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 202, in upload_inspection_report
+    raw_response = program(report_content=markdown_text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/instrumentation/dispatcher.py", line 311, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/program/function_program.py", line 202, in __call__
+    agent_response = self._llm.predict_and_call(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/instrumentation/dispatcher.py", line 311, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/llms/function_calling.py", line 190, in predict_and_call
+    tool_calls = self.get_tool_calls_from_response(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/llms/openai/base.py", line 894, in get_tool_calls_from_response
+    raise ValueError(
+ValueError: Expected at least one tool call, but got 0 tool calls.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 242, in upload_inspection_report
+    raise HTTPException(status_code=500, detail=f"Data extraction failed: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Data extraction failed: Expected at least one tool call, but got 0 tool calls.
+2024-11-09 15:03:10 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 15:03:10 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 15:03:17 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 15:03:17 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:03:17 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:03:17 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 15:03:17 - app.main - INFO - Initializing structured data extraction
+2024-11-09 15:03:17 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 15:03:21 - app.main - ERROR - Error in data extraction: Expected at least one tool call, but got 0 tool calls.
+2024-11-09 15:03:21 - app.main - ERROR - Error processing upload: 500: Data extraction failed: Expected at least one tool call, but got 0 tool calls.
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 270, in upload_inspection_report
+    raw_response = program(report_content=markdown_text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/instrumentation/dispatcher.py", line 311, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/program/function_program.py", line 202, in __call__
+    agent_response = self._llm.predict_and_call(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/instrumentation/dispatcher.py", line 311, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/core/llms/function_calling.py", line 190, in predict_and_call
+    tool_calls = self.get_tool_calls_from_response(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/llama_index/llms/openai/base.py", line 894, in get_tool_calls_from_response
+    raise ValueError(
+ValueError: Expected at least one tool call, but got 0 tool calls.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 310, in upload_inspection_report
+    raise HTTPException(status_code=500, detail=f"Data extraction failed: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Data extraction failed: Expected at least one tool call, but got 0 tool calls.
+2024-11-09 15:04:45 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 15:04:45 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 15:04:52 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 15:04:52 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:04:52 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:04:52 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 15:04:52 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 15:04:57 - app.main - INFO - Raw response received from LLM
+2024-11-09 15:04:57 - app.main - ERROR - Error creating InspectionReport: 65 validation errors for InspectionReport
+report_date
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+place_of_inspection
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.number
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.defective_item
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.nature_of_defect
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.convention_reference
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.1.number
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.defective_item
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.nature_of_defect
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.convention_reference
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.2.number
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.defective_item
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.nature_of_defect
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.convention_reference
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.3.number
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.defective_item
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.nature_of_defect
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.convention_reference
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.4.number
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.defective_item
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.nature_of_defect
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.convention_reference
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.5.number
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.defective_item
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.nature_of_defect
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.convention_reference
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.6.number
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.defective_item
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.nature_of_defect
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.convention_reference
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.7.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.8.number
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.defective_item
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.nature_of_defect
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.convention_reference
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.9.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.number
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.defective_item
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.nature_of_defect
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.convention_reference
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.number
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.defective_item
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.nature_of_defect
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.convention_reference
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+reporting_authority
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+2024-11-09 15:04:57 - app.main - ERROR - Error in data extraction: 500: Error creating report structure: 65 validation errors for InspectionReport
+report_date
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+place_of_inspection
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.number
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.defective_item
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.nature_of_defect
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.convention_reference
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.1.number
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.defective_item
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.nature_of_defect
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.convention_reference
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.2.number
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.defective_item
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.nature_of_defect
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.convention_reference
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.3.number
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.defective_item
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.nature_of_defect
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.convention_reference
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.4.number
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.defective_item
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.nature_of_defect
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.convention_reference
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.5.number
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.defective_item
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.nature_of_defect
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.convention_reference
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.6.number
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.defective_item
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.nature_of_defect
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.convention_reference
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.7.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.8.number
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.defective_item
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.nature_of_defect
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.convention_reference
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.9.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.number
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.defective_item
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.nature_of_defect
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.convention_reference
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.number
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.defective_item
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.nature_of_defect
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.convention_reference
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+reporting_authority
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+2024-11-09 15:04:57 - app.main - ERROR - Error processing upload: 500: Data extraction failed: 500: Error creating report structure: 65 validation errors for InspectionReport
+report_date
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+place_of_inspection
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.number
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.defective_item
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.nature_of_defect
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.convention_reference
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.1.number
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.defective_item
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.nature_of_defect
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.convention_reference
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.2.number
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.defective_item
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.nature_of_defect
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.convention_reference
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.3.number
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.defective_item
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.nature_of_defect
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.convention_reference
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.4.number
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.defective_item
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.nature_of_defect
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.convention_reference
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.5.number
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.defective_item
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.nature_of_defect
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.convention_reference
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.6.number
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.defective_item
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.nature_of_defect
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.convention_reference
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.7.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.8.number
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.defective_item
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.nature_of_defect
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.convention_reference
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.9.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.number
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.defective_item
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.nature_of_defect
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.convention_reference
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.number
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.defective_item
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.nature_of_defect
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.convention_reference
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+reporting_authority
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 221, in upload_inspection_report
+    structured_data = InspectionReport(**cleaned_data)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhirajkhanna/Documents/PSC/psc/lib/python3.12/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 65 validation errors for InspectionReport
+report_date
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+place_of_inspection
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.number
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.defective_item
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.nature_of_defect
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.convention_reference
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.1.number
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.defective_item
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.nature_of_defect
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.convention_reference
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.2.number
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.defective_item
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.nature_of_defect
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.convention_reference
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.3.number
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.defective_item
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.nature_of_defect
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.convention_reference
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.4.number
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.defective_item
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.nature_of_defect
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.convention_reference
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.5.number
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.defective_item
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.nature_of_defect
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.convention_reference
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.6.number
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.defective_item
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.nature_of_defect
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.convention_reference
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.7.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.8.number
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.defective_item
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.nature_of_defect
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.convention_reference
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.9.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.number
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.defective_item
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.nature_of_defect
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.convention_reference
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.number
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.defective_item
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.nature_of_defect
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.convention_reference
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+reporting_authority
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 224, in upload_inspection_report
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: Error creating report structure: 65 validation errors for InspectionReport
+report_date
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+place_of_inspection
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.number
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.defective_item
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.nature_of_defect
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.convention_reference
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.1.number
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.defective_item
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.nature_of_defect
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.convention_reference
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.2.number
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.defective_item
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.nature_of_defect
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.convention_reference
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.3.number
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.defective_item
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.nature_of_defect
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.convention_reference
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.4.number
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.defective_item
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.nature_of_defect
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.convention_reference
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.5.number
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.defective_item
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.nature_of_defect
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.convention_reference
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.6.number
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.defective_item
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.nature_of_defect
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.convention_reference
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.7.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.8.number
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.defective_item
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.nature_of_defect
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.convention_reference
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.9.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.number
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.defective_item
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.nature_of_defect
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.convention_reference
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.number
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.defective_item
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.nature_of_defect
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.convention_reference
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+reporting_authority
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 242, in upload_inspection_report
+    raise HTTPException(status_code=500, detail=f"Data extraction failed: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Data extraction failed: 500: Error creating report structure: 65 validation errors for InspectionReport
+report_date
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+place_of_inspection
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.number
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.defective_item
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.nature_of_defect
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.convention_reference
+  Field required [type=missing, input_value={'code': '01199', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.0.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.1.number
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.defective_item
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.nature_of_defect
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.convention_reference
+  Field required [type=missing, input_value={'code': '14802', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.1.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.2.number
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.defective_item
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.nature_of_defect
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.convention_reference
+  Field required [type=missing, input_value={'code': '07111', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.2.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.3.number
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.defective_item
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.nature_of_defect
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.convention_reference
+  Field required [type=missing, input_value={'code': '07125', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.3.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.4.number
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.defective_item
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.nature_of_defect
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.convention_reference
+  Field required [type=missing, input_value={'code': '04102', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.4.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.5.number
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.defective_item
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.nature_of_defect
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.convention_reference
+  Field required [type=missing, input_value={'code': '03108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.5.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.6.number
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.defective_item
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.nature_of_defect
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.convention_reference
+  Field required [type=missing, input_value={'code': '02107', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.6.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.7.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.7.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.8.number
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.defective_item
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.nature_of_defect
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.convention_reference
+  Field required [type=missing, input_value={'code': '13104', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.8.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.9.number
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.defective_item
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.nature_of_defect
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.convention_reference
+  Field required [type=missing, input_value={'code': '07113', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.9.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.number
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.defective_item
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.nature_of_defect
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.convention_reference
+  Field required [type=missing, input_value={'code': '18425', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.10.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.10.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.number
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.defective_item
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.nature_of_defect
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.convention_reference
+  Field required [type=missing, input_value={'code': '07108', 'descri... 'rectified_date': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+deficiencies.11.action_taken
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+deficiencies.11.action_code
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.9/v/string_type
+reporting_authority
+  Field required [type=missing, input_value={'ship': {'name': 'ELEGAN...None, 'detained': False}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.9/v/missing
+2024-11-09 15:07:41 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 15:07:41 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 15:07:47 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 15:07:47 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:07:47 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:07:47 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 15:07:47 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 15:07:52 - app.main - INFO - Raw response received from LLM
+2024-11-09 15:07:52 - app.main - INFO - Successfully processed report
+2024-11-09 15:07:52 - app.main - INFO - Vessel name: ELEGANT VOYAGER
+2024-11-09 15:07:52 - app.main - INFO - Number of deficiencies: 12
+2024-11-09 15:09:06 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-09 15:09:06 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 15:09:14 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-09 15:09:14 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:09:14 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:09:14 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 15:09:14 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 15:09:16 - app.main - INFO - Raw response received from LLM
+2024-11-09 15:09:16 - app.main - ERROR - Response validation failed: Missing deficiency description at index 0
+2024-11-09 15:09:16 - app.main - ERROR - Error in data extraction: 500: Invalid response format: Missing deficiency description at index 0
+2024-11-09 15:09:16 - app.main - ERROR - Error processing upload: 500: Data extraction failed: 500: Invalid response format: Missing deficiency description at index 0
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 215, in upload_inspection_report
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: Invalid response format: Missing deficiency description at index 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 242, in upload_inspection_report
+    raise HTTPException(status_code=500, detail=f"Data extraction failed: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Data extraction failed: 500: Invalid response format: Missing deficiency description at index 0
+2024-11-09 15:10:56 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-09 15:10:56 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 15:11:03 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-09 15:11:03 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:11:03 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:11:03 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 15:11:03 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 15:11:06 - app.main - INFO - Raw response received from LLM
+2024-11-09 15:11:06 - app.main - INFO - Successfully processed report
+2024-11-09 15:11:06 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-09 15:11:06 - app.main - INFO - Number of deficiencies: 5
+2024-11-09 15:15:27 - app.main - INFO - Received file upload: PSC Antwerp Oct 4 2024.pdf
+2024-11-09 15:15:27 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 15:24:47 - app.main - INFO - Parsed 9 pages from PDF
+2024-11-09 15:24:47 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:24:47 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:24:47 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 15:24:47 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 15:24:51 - app.main - INFO - Raw response received from LLM
+2024-11-09 15:24:51 - app.main - INFO - Successfully processed report
+2024-11-09 15:24:51 - app.main - INFO - Vessel name: MARI BOYLE
+2024-11-09 15:24:51 - app.main - INFO - Number of deficiencies: 1
+2024-11-09 15:26:13 - app.main - INFO - Received file upload: PSC Inspection Report Immingham Nov 2 2024.pdf
+2024-11-09 15:26:13 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 15:31:10 - app.main - INFO - Parsed 10 pages from PDF
+2024-11-09 15:31:10 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:31:10 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:31:10 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 15:31:10 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 15:31:14 - app.main - INFO - Raw response received from LLM
+2024-11-09 15:31:14 - app.main - INFO - Successfully processed report
+2024-11-09 15:31:14 - app.main - INFO - Vessel name: STI MERAUX
+2024-11-09 15:31:14 - app.main - INFO - Number of deficiencies: 13
+2024-11-09 15:41:43 - app.main - INFO - Received file upload: PSC Form A&B Anchorage Alaska Jan 11 2024.pdf
+2024-11-09 15:41:43 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 15:42:19 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-09 15:42:19 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:42:19 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:42:19 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 15:42:19 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 15:42:20 - app.main - INFO - Raw response received from LLM
+2024-11-09 15:42:20 - app.main - INFO - Successfully processed report
+2024-11-09 15:42:20 - app.main - INFO - Vessel name: STI ESLES II
+2024-11-09 15:42:20 - app.main - INFO - Number of deficiencies: 1
+2024-11-09 15:43:33 - app.main - INFO - Received file upload: PSC Reports for Project - Garnet.pdf
+2024-11-09 15:43:33 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 15:44:06 - app.main - INFO - Parsed 12 pages from PDF
+2024-11-09 15:44:06 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:44:06 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 15:44:06 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 15:44:06 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 15:44:09 - app.main - INFO - Raw response received from LLM
+2024-11-09 15:44:09 - app.main - INFO - Successfully processed report
+2024-11-09 15:44:09 - app.main - INFO - Vessel name: STI GARNET
+2024-11-09 15:44:09 - app.main - INFO - Number of deficiencies: 1
+2024-11-09 19:09:13 - app.main - INFO - Received file upload: Port State Control Inspection Mohammedia Feb 28 2024.pdf
+2024-11-09 19:09:13 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 19:13:58 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-09 19:13:58 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 19:13:58 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 19:13:58 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 19:13:58 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 19:14:00 - app.main - INFO - Raw response received from LLM
+2024-11-09 19:14:00 - app.main - ERROR - Response validation failed: Invalid IMO number format
+2024-11-09 19:14:00 - app.main - ERROR - Error in data extraction: 500: Invalid response format: Invalid IMO number format
+2024-11-09 19:14:00 - app.main - ERROR - Error processing upload: 500: Data extraction failed: 500: Invalid response format: Invalid IMO number format
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 215, in upload_inspection_report
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: Invalid response format: Invalid IMO number format
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 242, in upload_inspection_report
+    raise HTTPException(status_code=500, detail=f"Data extraction failed: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Data extraction failed: 500: Invalid response format: Invalid IMO number format
+2024-11-09 19:37:17 - app.main - INFO - Received file upload: Sydney AMSA Report Feb 7 2024.pdf
+2024-11-09 19:37:17 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 19:39:51 - app.main - INFO - Parsed 0 pages from PDF
+2024-11-09 19:39:51 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 19:39:51 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 19:39:51 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 19:39:51 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 19:39:52 - app.main - INFO - Raw response received from LLM
+2024-11-09 19:39:52 - app.main - ERROR - Response validation failed: Invalid IMO number format; Invalid deficiency code format at index 0; Invalid deficiency code format at index 1
+2024-11-09 19:39:52 - app.main - ERROR - Error in data extraction: 500: Invalid response format: Invalid IMO number format; Invalid deficiency code format at index 0; Invalid deficiency code format at index 1
+2024-11-09 19:39:52 - app.main - ERROR - Error processing upload: 500: Data extraction failed: 500: Invalid response format: Invalid IMO number format; Invalid deficiency code format at index 0; Invalid deficiency code format at index 1
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 215, in upload_inspection_report
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: Invalid response format: Invalid IMO number format; Invalid deficiency code format at index 0; Invalid deficiency code format at index 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajkhanna/Documents/PSC/app/main.py", line 242, in upload_inspection_report
+    raise HTTPException(status_code=500, detail=f"Data extraction failed: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Data extraction failed: 500: Invalid response format: Invalid IMO number format; Invalid deficiency code format at index 0; Invalid deficiency code format at index 1
+2024-11-09 19:45:02 - app.main - INFO - Received file upload: Sydney AMSA Report Feb 7 2024.pdf
+2024-11-09 19:45:02 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 19:45:07 - app.main - INFO - Parsed 3 pages from PDF
+2024-11-09 19:45:07 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 19:45:07 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 19:45:07 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 19:45:07 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 19:45:09 - app.main - INFO - Raw response received from LLM
+2024-11-09 19:45:09 - app.main - INFO - Successfully processed report
+2024-11-09 19:45:09 - app.main - INFO - Vessel name: STI MADISON
+2024-11-09 19:45:09 - app.main - INFO - Number of deficiencies: 1
+2024-11-09 19:45:55 - app.main - INFO - Received file upload: PSC Form A Inspection Report.pdf
+2024-11-09 19:45:55 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 19:46:21 - app.main - INFO - Parsed 1 pages from PDF
+2024-11-09 19:46:21 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 19:46:21 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 19:46:21 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 19:46:21 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 19:46:22 - app.main - INFO - Raw response received from LLM
+2024-11-09 19:46:22 - app.main - INFO - Successfully processed report
+2024-11-09 19:46:22 - app.main - INFO - Vessel name: MARI KOKAKO
+2024-11-09 19:46:22 - app.main - INFO - Number of deficiencies: 0
+2024-11-09 19:52:22 - app.main - INFO - Received file upload: PSC Form A Report.pdf
+2024-11-09 19:52:22 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 20:02:15 - app.main - INFO - Parsed 1 pages from PDF
+2024-11-09 20:02:15 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:02:15 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:02:15 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 20:02:15 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 20:02:16 - app.main - INFO - Raw response received from LLM
+2024-11-09 20:02:16 - app.main - INFO - Successfully processed report
+2024-11-09 20:02:16 - app.main - INFO - Vessel name: STI ST CHARLES
+2024-11-09 20:02:16 - app.main - INFO - Number of deficiencies: 0
+2024-11-09 20:45:51 - app.main - INFO - Received file upload: PSC Form A Report.pdf
+2024-11-09 20:45:51 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 20:45:55 - app.main - INFO - Parsed 1 pages from PDF
+2024-11-09 20:45:55 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:45:55 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:45:55 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 20:45:55 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 20:45:56 - app.main - INFO - Raw response received from LLM
+2024-11-09 20:45:56 - app.main - INFO - Successfully processed report
+2024-11-09 20:45:56 - app.main - INFO - Vessel name: STI ST CHARLES
+2024-11-09 20:45:56 - app.main - INFO - Number of deficiencies: 0
+2024-11-09 20:47:02 - app.main - INFO - Received file upload: PSC Form A Report.pdf
+2024-11-09 20:47:02 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 20:47:06 - app.main - INFO - Parsed 1 pages from PDF
+2024-11-09 20:47:06 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:47:06 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:47:06 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 20:47:06 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 20:47:07 - app.main - INFO - Raw response received from LLM
+2024-11-09 20:47:07 - app.main - INFO - Successfully processed report
+2024-11-09 20:47:07 - app.main - INFO - Vessel name: STI ST CHARLES
+2024-11-09 20:47:07 - app.main - INFO - Number of deficiencies: 0
+2024-11-09 20:49:47 - app.main - INFO - Received file upload: PSC Reports for Project - Garnet.pdf
+2024-11-09 20:49:47 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 20:49:58 - app.main - INFO - Parsed 12 pages from PDF
+2024-11-09 20:49:58 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:49:58 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:49:58 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 20:49:58 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 20:50:00 - app.main - INFO - Raw response received from LLM
+2024-11-09 20:50:00 - app.main - INFO - Successfully processed report
+2024-11-09 20:50:00 - app.main - INFO - Vessel name: STI GARNET
+2024-11-09 20:50:00 - app.main - INFO - Number of deficiencies: 1
+2024-11-09 20:50:44 - app.main - INFO - Received file upload: PSC Reports for Project - Garnet.pdf
+2024-11-09 20:50:44 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 20:50:55 - app.main - INFO - Parsed 12 pages from PDF
+2024-11-09 20:50:55 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:50:55 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:50:55 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 20:50:55 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 20:50:58 - app.main - INFO - Raw response received from LLM
+2024-11-09 20:50:58 - app.main - INFO - Successfully processed report
+2024-11-09 20:50:58 - app.main - INFO - Vessel name: STI GARNET
+2024-11-09 20:50:58 - app.main - INFO - Number of deficiencies: 1
+2024-11-09 20:57:32 - app.main - INFO - Received file upload: PSC Reports for Project - Garnet.pdf
+2024-11-09 20:57:32 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 20:57:43 - app.main - INFO - Parsed 12 pages from PDF
+2024-11-09 20:57:43 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:57:43 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:57:43 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 20:57:43 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 20:57:45 - app.main - INFO - Raw response received from LLM
+2024-11-09 20:57:45 - app.main - INFO - Successfully processed report
+2024-11-09 20:57:45 - app.main - INFO - Vessel name: STI GARNET
+2024-11-09 20:57:45 - app.main - INFO - Number of deficiencies: 1
+2024-11-09 20:58:35 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 20:58:35 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 20:58:42 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 20:58:42 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:58:42 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 20:58:42 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 20:58:42 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 20:58:46 - app.main - INFO - Raw response received from LLM
+2024-11-09 20:58:46 - app.main - INFO - Successfully processed report
+2024-11-09 20:58:46 - app.main - INFO - Vessel name: ELEGANT VOYAGER
+2024-11-09 20:58:46 - app.main - INFO - Number of deficiencies: 12
+2024-11-09 21:09:32 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 21:09:32 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 21:09:39 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 21:09:39 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:09:39 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:09:39 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 21:09:39 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 21:09:43 - app.main - INFO - Raw response received from LLM
+2024-11-09 21:09:43 - app.main - INFO - Successfully processed report
+2024-11-09 21:09:43 - app.main - INFO - Vessel name: ELEGANT VOYAGER
+2024-11-09 21:09:43 - app.main - INFO - Number of deficiencies: 12
+2024-11-09 21:11:33 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 21:11:33 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 21:11:41 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 21:11:41 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:11:41 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:11:41 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 21:11:41 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 21:11:45 - app.main - INFO - Raw response received from LLM
+2024-11-09 21:11:45 - app.main - INFO - Successfully processed report
+2024-11-09 21:11:45 - app.main - INFO - Vessel name: ELEGANT VOYAGER
+2024-11-09 21:11:45 - app.main - INFO - Number of deficiencies: 12
+2024-11-09 21:13:52 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 21:13:52 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 21:13:59 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 21:13:59 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:13:59 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:13:59 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 21:13:59 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 21:14:03 - app.main - INFO - Raw response received from LLM
+2024-11-09 21:14:03 - app.main - INFO - Successfully processed report
+2024-11-09 21:14:03 - app.main - INFO - Vessel name: ELEGANT VOYAGER
+2024-11-09 21:14:03 - app.main - INFO - Number of deficiencies: 12
+2024-11-09 21:17:34 - app.main - INFO - Received file upload: PSC Inspection Report Antwerp Aug 1 2024.pdf
+2024-11-09 21:17:34 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 21:17:41 - app.main - INFO - Parsed 11 pages from PDF
+2024-11-09 21:17:41 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:17:41 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:17:41 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 21:17:41 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 21:17:45 - app.main - INFO - Raw response received from LLM
+2024-11-09 21:17:45 - app.main - INFO - Successfully processed report
+2024-11-09 21:17:45 - app.main - INFO - Vessel name: ELEGANT VOYAGER
+2024-11-09 21:17:45 - app.main - INFO - Number of deficiencies: 12
+2024-11-09 21:18:08 - app.main - INFO - Received file upload: AMSA PSC Inspection May 14 2024.pdf
+2024-11-09 21:18:08 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 21:19:08 - app.main - INFO - Parsed 2 pages from PDF
+2024-11-09 21:19:08 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:19:08 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:19:08 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 21:19:08 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 21:19:10 - app.main - INFO - Raw response received from LLM
+2024-11-09 21:19:10 - app.main - INFO - Successfully processed report
+2024-11-09 21:19:10 - app.main - INFO - Vessel name: SUNNY LIGER
+2024-11-09 21:19:10 - app.main - INFO - Number of deficiencies: 3
+2024-11-09 21:24:42 - app.main - INFO - Received file upload: AMSA PSC Inspection May 14 2024.pdf
+2024-11-09 21:24:42 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 21:24:47 - app.main - INFO - Parsed 2 pages from PDF
+2024-11-09 21:24:47 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:24:47 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:24:47 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 21:24:47 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 21:24:49 - app.main - INFO - Raw response received from LLM
+2024-11-09 21:24:49 - app.main - INFO - Successfully processed report
+2024-11-09 21:24:49 - app.main - INFO - Vessel name: SUNNY LIGER
+2024-11-09 21:24:49 - app.main - INFO - Number of deficiencies: 3
+2024-11-09 21:26:34 - app.main - INFO - Received file upload: AMSA PSC Inspection May 14 2024.pdf
+2024-11-09 21:26:34 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 21:26:39 - app.main - INFO - Parsed 2 pages from PDF
+2024-11-09 21:26:39 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:26:39 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:26:39 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 21:26:39 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 21:26:42 - app.main - INFO - Raw response received from LLM
+2024-11-09 21:26:42 - app.main - INFO - Successfully processed report
+2024-11-09 21:26:42 - app.main - INFO - Vessel name: SUNNY LIGER
+2024-11-09 21:26:42 - app.main - INFO - Number of deficiencies: 3
+2024-11-09 21:29:01 - app.main - INFO - Received file upload: PSC Reports for Project - Garnet.pdf
+2024-11-09 21:29:01 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 21:29:12 - app.main - INFO - Parsed 12 pages from PDF
+2024-11-09 21:29:12 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:29:12 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:29:12 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 21:29:12 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 21:29:15 - app.main - INFO - Raw response received from LLM
+2024-11-09 21:29:15 - app.main - INFO - Successfully processed report
+2024-11-09 21:29:15 - app.main - INFO - Vessel name: STI GARNET
+2024-11-09 21:29:15 - app.main - INFO - Number of deficiencies: 1
+2024-11-09 21:49:22 - app.main - INFO - Received file upload: PSC Reports for Project.pdf
+2024-11-09 21:49:22 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 21:53:56 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-09 21:53:56 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 21:54:04 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-09 21:54:04 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:54:04 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 21:54:04 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 21:54:04 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 21:54:07 - app.main - INFO - Raw response received from LLM
+2024-11-09 21:54:07 - app.main - INFO - Successfully processed report
+2024-11-09 21:54:07 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-09 21:54:07 - app.main - INFO - Number of deficiencies: 5
+2024-11-09 21:56:08 - app.main - INFO - Received file upload: Riyadh MOU PSC Report.pdf
+2024-11-09 21:56:08 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 22:00:52 - app.main - INFO - Parsed 1 pages from PDF
+2024-11-09 22:00:52 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:00:52 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:00:52 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 22:00:52 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 22:00:54 - app.main - INFO - Raw response received from LLM
+2024-11-09 22:00:54 - app.main - INFO - Successfully processed report
+2024-11-09 22:00:54 - app.main - INFO - Vessel name: Sea Quest
+2024-11-09 22:00:54 - app.main - INFO - Number of deficiencies: 0
+2024-11-09 22:03:19 - app.main - INFO - Received file upload: PSC Form A&B Anchorage Alaska Jan 11 2024.pdf
+2024-11-09 22:03:19 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 22:03:28 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-09 22:03:28 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:03:28 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:03:28 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 22:03:28 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 22:03:29 - app.main - INFO - Raw response received from LLM
+2024-11-09 22:03:29 - app.main - INFO - Successfully processed report
+2024-11-09 22:03:29 - app.main - INFO - Vessel name: STI ESLES II
+2024-11-09 22:03:29 - app.main - INFO - Number of deficiencies: 1
+2024-11-09 22:06:24 - app.main - INFO - Received file upload: PSC Form A&B Anchorage Alaska Jan 11 2024.pdf
+2024-11-09 22:06:24 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 22:06:33 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-09 22:06:33 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:06:33 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:06:33 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 22:06:33 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 22:06:34 - app.main - INFO - Raw response received from LLM
+2024-11-09 22:06:34 - app.main - INFO - Successfully processed report
+2024-11-09 22:06:34 - app.main - INFO - Vessel name: STI ESLES II
+2024-11-09 22:06:34 - app.main - INFO - Number of deficiencies: 1
+2024-11-09 22:07:16 - app.main - INFO - Received file upload: Port State Control Inspection Feb 20 2024 New York.pdf
+2024-11-09 22:07:16 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 22:16:35 - app.main - INFO - Parsed 1 pages from PDF
+2024-11-09 22:16:35 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:16:35 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:16:35 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 22:16:35 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 22:16:37 - app.main - INFO - Raw response received from LLM
+2024-11-09 22:16:37 - app.main - INFO - Successfully processed report
+2024-11-09 22:16:37 - app.main - INFO - Vessel name: STI DONALD C TRAUSCHT
+2024-11-09 22:16:37 - app.main - INFO - Number of deficiencies: 0
+2024-11-09 22:17:49 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-09 22:17:49 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 22:17:57 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-09 22:17:57 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:17:57 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:17:57 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 22:17:57 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 22:17:59 - app.main - INFO - Raw response received from LLM
+2024-11-09 22:17:59 - app.main - INFO - Successfully processed report
+2024-11-09 22:17:59 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-09 22:17:59 - app.main - INFO - Number of deficiencies: 5
+2024-11-09 22:18:28 - app.main - INFO - Received file upload: PSC Form A Report.pdf
+2024-11-09 22:18:28 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 22:18:31 - app.main - INFO - Parsed 1 pages from PDF
+2024-11-09 22:18:31 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:18:31 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:18:31 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 22:18:31 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 22:18:32 - app.main - INFO - Raw response received from LLM
+2024-11-09 22:18:32 - app.main - INFO - Successfully processed report
+2024-11-09 22:18:32 - app.main - INFO - Vessel name: STI ST CHARLES
+2024-11-09 22:18:32 - app.main - INFO - Number of deficiencies: 0
+2024-11-09 22:19:33 - app.main - INFO - Received file upload: STI Poplar PSC Inspection Report.pdf
+2024-11-09 22:19:33 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 22:27:55 - app.main - INFO - Parsed 9 pages from PDF
+2024-11-09 22:27:55 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:27:55 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:27:55 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 22:27:55 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 22:27:58 - app.main - INFO - Raw response received from LLM
+2024-11-09 22:27:58 - app.main - INFO - Successfully processed report
+2024-11-09 22:27:58 - app.main - INFO - Vessel name: STI POPLAR
+2024-11-09 22:27:58 - app.main - INFO - Number of deficiencies: 6
+2024-11-09 22:29:18 - app.main - INFO - Received file upload: STI Poplar PSC Inspection Report.pdf
+2024-11-09 22:29:18 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 22:30:19 - app.main - INFO - Parsed 9 pages from PDF
+2024-11-09 22:30:19 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:30:19 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:30:19 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 22:30:19 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 22:30:23 - app.main - INFO - Raw response received from LLM
+2024-11-09 22:30:23 - app.main - INFO - Successfully processed report
+2024-11-09 22:30:23 - app.main - INFO - Vessel name: STI POPLAR
+2024-11-09 22:30:23 - app.main - INFO - Number of deficiencies: 6
+2024-11-09 22:33:47 - app.main - INFO - Received file upload: PSC Report May 11 2024.pdf
+2024-11-09 22:33:47 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-09 22:34:25 - app.main - INFO - Parsed 2 pages from PDF
+2024-11-09 22:34:25 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:34:25 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-09 22:34:25 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-09 22:34:25 - app.main - INFO - Extracting structured data from markdown
+2024-11-09 22:34:28 - app.main - INFO - Raw response received from LLM
+2024-11-09 22:34:28 - app.validators - WARNING - Non-standard date format for rectified_date at index 0
+2024-11-09 22:34:28 - app.validators - WARNING - Non-standard date format for rectified_date at index 1
+2024-11-09 22:34:28 - app.validators - WARNING - Non-standard date format for rectified_date at index 2
+2024-11-09 22:34:28 - app.validators - WARNING - Non-standard date format for rectified_date at index 3
+2024-11-09 22:34:28 - app.main - INFO - Successfully processed report
+2024-11-09 22:34:28 - app.main - INFO - Vessel name: SAINT ALBANS BAY
+2024-11-09 22:34:28 - app.main - INFO - Number of deficiencies: 4
+2024-11-10 08:06:42 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:06:42 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:06:50 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:06:50 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:06:50 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:06:50 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:06:50 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:06:53 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:06:53 - app.main - INFO - Successfully processed report
+2024-11-10 08:06:53 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:06:53 - app.main - INFO - Number of deficiencies: 6
+2024-11-10 08:11:50 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:11:50 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:11:58 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:11:58 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:11:58 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:11:58 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:11:58 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:12:00 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:12:00 - app.main - INFO - Successfully processed report
+2024-11-10 08:12:00 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:12:00 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 08:12:52 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:12:52 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:12:59 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:12:59 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:12:59 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:12:59 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:12:59 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:13:01 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:13:01 - app.main - INFO - Successfully processed report
+2024-11-10 08:13:01 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:13:01 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 08:13:44 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:13:44 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:13:51 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:13:51 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:13:51 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:13:51 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:13:51 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:13:54 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:13:54 - app.main - INFO - Successfully processed report
+2024-11-10 08:13:54 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:13:54 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 08:14:09 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:14:09 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:14:16 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:14:16 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:14:16 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:14:16 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:14:16 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:14:19 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:14:19 - app.main - INFO - Successfully processed report
+2024-11-10 08:14:19 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:14:19 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 08:15:21 - app.main - INFO - Received file upload: AMSA PSC Inspection May 14 2024.pdf
+2024-11-10 08:15:21 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:15:26 - app.main - INFO - Parsed 2 pages from PDF
+2024-11-10 08:15:26 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:15:26 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:15:26 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:15:26 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:15:29 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:15:29 - app.main - INFO - Successfully processed report
+2024-11-10 08:15:29 - app.main - INFO - Vessel name: SUNNY LIGER
+2024-11-10 08:15:29 - app.main - INFO - Number of deficiencies: 3
+2024-11-10 08:22:08 - app.main - INFO - Received file upload: AMSA PSC Inspection May 14 2024.pdf
+2024-11-10 08:22:08 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:22:13 - app.main - INFO - Parsed 2 pages from PDF
+2024-11-10 08:22:13 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:22:13 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:22:13 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:22:13 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:22:16 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:22:16 - app.main - INFO - Successfully processed report
+2024-11-10 08:22:16 - app.main - INFO - Vessel name: SUNNY LIGER
+2024-11-10 08:22:16 - app.main - INFO - Number of deficiencies: 3
+2024-11-10 08:22:51 - app.main - INFO - Received file upload: AMSA PSC Inspection May 14 2024.pdf
+2024-11-10 08:22:51 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:22:56 - app.main - INFO - Parsed 2 pages from PDF
+2024-11-10 08:22:56 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:22:56 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:22:56 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:22:56 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:22:58 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:22:58 - app.main - INFO - Successfully processed report
+2024-11-10 08:22:58 - app.main - INFO - Vessel name: SUNNY LIGER
+2024-11-10 08:22:58 - app.main - INFO - Number of deficiencies: 3
+2024-11-10 08:23:23 - app.main - INFO - Received file upload: Sydney AMSA Report Feb 7 2024.pdf
+2024-11-10 08:23:23 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:23:28 - app.main - INFO - Parsed 3 pages from PDF
+2024-11-10 08:23:28 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:23:28 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:23:28 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:23:28 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:23:30 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:23:30 - app.main - INFO - Successfully processed report
+2024-11-10 08:23:30 - app.main - INFO - Vessel name: STI MADISON
+2024-11-10 08:23:30 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 08:24:09 - app.main - INFO - Received file upload: AMSA PSC Inspection May 14 2024.pdf
+2024-11-10 08:24:09 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:24:15 - app.main - INFO - Parsed 2 pages from PDF
+2024-11-10 08:24:15 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:24:15 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:24:15 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:24:15 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:24:17 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:24:17 - app.main - INFO - Successfully processed report
+2024-11-10 08:24:17 - app.main - INFO - Vessel name: SUNNY LIGER
+2024-11-10 08:24:17 - app.main - INFO - Number of deficiencies: 3
+2024-11-10 08:26:20 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:26:20 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:26:28 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:26:28 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:26:28 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:26:28 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:26:28 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:26:30 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:26:30 - app.main - INFO - Successfully processed report
+2024-11-10 08:26:30 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:26:30 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 08:29:16 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:29:16 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:29:23 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:29:23 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:29:23 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:29:23 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:29:23 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:29:26 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:29:26 - app.main - INFO - Successfully processed report
+2024-11-10 08:29:26 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:29:26 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 08:30:36 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:30:36 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:30:43 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:30:43 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:30:43 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:30:43 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:30:43 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:30:46 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:30:46 - app.main - INFO - Successfully processed report
+2024-11-10 08:30:46 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:30:46 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 08:31:16 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:31:16 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:31:24 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:31:24 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:31:24 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:31:24 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:31:24 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:31:27 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:31:27 - app.main - INFO - Successfully processed report
+2024-11-10 08:31:27 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:31:27 - app.main - INFO - Number of deficiencies: 6
+2024-11-10 08:31:42 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:31:42 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:31:50 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:31:50 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:31:50 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:31:50 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:31:50 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:31:53 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:31:53 - app.main - INFO - Successfully processed report
+2024-11-10 08:31:53 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:31:53 - app.main - INFO - Number of deficiencies: 6
+2024-11-10 08:32:09 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:32:09 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:32:17 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:32:17 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:32:17 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:32:17 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:32:17 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:32:20 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:32:20 - app.main - INFO - Successfully processed report
+2024-11-10 08:32:20 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:32:20 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 08:33:22 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 08:33:22 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 08:33:29 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 08:33:29 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:33:29 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 08:33:29 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 08:33:29 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 08:33:32 - app.main - INFO - Raw response received from LLM
+2024-11-10 08:33:32 - app.main - INFO - Successfully processed report
+2024-11-10 08:33:32 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 08:33:32 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 09:03:40 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 09:03:40 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 09:04:16 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 09:04:16 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:04:16 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:04:16 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 09:04:16 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 09:04:19 - app.main - INFO - Raw response received from LLM
+2024-11-10 09:04:19 - app.main - INFO - Successfully processed report
+2024-11-10 09:04:19 - app.main - INFO - Vessel name: ST LORELIA
+2024-11-10 09:04:19 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 09:17:05 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 09:17:05 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 09:17:09 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 09:17:09 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:17:09 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:17:09 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 09:17:09 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 09:17:12 - app.main - INFO - Raw response received from LLM
+2024-11-10 09:17:12 - app.main - INFO - Successfully processed report
+2024-11-10 09:17:12 - app.main - INFO - Vessel name: ST LORELIA
+2024-11-10 09:17:12 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 09:17:33 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 09:17:33 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 09:17:39 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 09:17:39 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:17:39 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:17:39 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 09:17:39 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 09:17:42 - app.main - INFO - Raw response received from LLM
+2024-11-10 09:17:42 - app.main - INFO - Successfully processed report
+2024-11-10 09:17:42 - app.main - INFO - Vessel name: ST LORELIA
+2024-11-10 09:17:42 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 09:18:20 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 09:18:20 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 09:18:28 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 09:18:28 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:18:28 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:18:28 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 09:18:28 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 09:18:30 - app.main - INFO - Raw response received from LLM
+2024-11-10 09:18:30 - app.main - INFO - Successfully processed report
+2024-11-10 09:18:30 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 09:18:30 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 09:21:17 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 09:21:17 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 09:21:25 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 09:21:25 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:21:25 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:21:25 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 09:21:25 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 09:21:28 - app.main - INFO - Raw response received from LLM
+2024-11-10 09:21:28 - app.main - INFO - Successfully processed report
+2024-11-10 09:21:28 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 09:21:28 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 09:24:39 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 09:24:39 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 09:24:46 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 09:24:46 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:24:46 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:24:46 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 09:24:46 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 09:24:49 - app.main - INFO - Raw response received from LLM
+2024-11-10 09:24:49 - app.main - INFO - Successfully processed report
+2024-11-10 09:24:49 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 09:24:49 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 09:27:25 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 09:27:25 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 09:27:33 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 09:27:33 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:27:33 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:27:33 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 09:27:33 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 09:27:36 - app.main - INFO - Raw response received from LLM
+2024-11-10 09:27:36 - app.main - INFO - Successfully processed report
+2024-11-10 09:27:36 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 09:27:36 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 09:28:13 - app.main - INFO - Received file upload: PSC Inspection Report Immingham Nov 2 2024.pdf
+2024-11-10 09:28:13 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 09:28:33 - app.main - INFO - Parsed 10 pages from PDF
+2024-11-10 09:28:33 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:28:33 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:28:33 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 09:28:33 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 09:28:37 - app.main - INFO - Raw response received from LLM
+2024-11-10 09:28:37 - app.main - INFO - Successfully processed report
+2024-11-10 09:28:37 - app.main - INFO - Vessel name: STI MERAUX
+2024-11-10 09:28:37 - app.main - INFO - Number of deficiencies: 13
+2024-11-10 09:32:26 - app.main - INFO - Received file upload: PSC Inspection Report Immingham Nov 2 2024.pdf
+2024-11-10 09:32:26 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 09:32:37 - app.main - INFO - Parsed 10 pages from PDF
+2024-11-10 09:32:37 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:32:37 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:32:37 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 09:32:37 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 09:32:42 - app.main - INFO - Raw response received from LLM
+2024-11-10 09:32:42 - app.main - INFO - Successfully processed report
+2024-11-10 09:32:42 - app.main - INFO - Vessel name: STI MERAUX
+2024-11-10 09:32:42 - app.main - INFO - Number of deficiencies: 13
+2024-11-10 09:33:50 - app.main - INFO - Received file upload: STI Poplar PSC Inspection Report.pdf
+2024-11-10 09:33:50 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 09:34:41 - app.main - INFO - Parsed 9 pages from PDF
+2024-11-10 09:34:41 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:34:41 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 09:34:41 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 09:34:41 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 09:34:45 - app.main - INFO - Raw response received from LLM
+2024-11-10 09:34:45 - app.main - INFO - Successfully processed report
+2024-11-10 09:34:45 - app.main - INFO - Vessel name: STI POPLAR
+2024-11-10 09:34:45 - app.main - INFO - Number of deficiencies: 6
+2024-11-10 10:30:33 - app.main - INFO - Received file upload: STI Poplar PSC Inspection Report.pdf
+2024-11-10 10:30:33 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 10:31:23 - app.main - INFO - Parsed 9 pages from PDF
+2024-11-10 10:31:23 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 10:31:23 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 10:31:23 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 10:31:23 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 10:31:27 - app.main - INFO - Raw response received from LLM
+2024-11-10 10:31:27 - app.main - INFO - Successfully processed report
+2024-11-10 10:31:27 - app.main - INFO - Vessel name: STI POPLAR
+2024-11-10 10:31:27 - app.main - INFO - Number of deficiencies: 6
+2024-11-10 10:31:29 - app.main - INFO - Stored report in database with ID: cfe93fd5-5252-4b14-87d6-b321c48057aa
+2024-11-10 12:00:39 - app.main - INFO - Received file upload: PSC Reports for Project - Garnet.pdf
+2024-11-10 12:00:39 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 12:01:05 - app.main - INFO - Parsed 12 pages from PDF
+2024-11-10 12:01:05 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 12:01:05 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 12:01:05 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 12:01:05 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 12:01:09 - app.main - INFO - Raw response received from LLM
+2024-11-10 12:01:09 - app.main - INFO - Successfully processed report
+2024-11-10 12:01:09 - app.main - INFO - Vessel name: STI GARNET
+2024-11-10 12:01:09 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 12:01:11 - app.main - INFO - Stored report in database with ID: 2140cfdf-cfef-4366-88c4-0180981c9f80
+2024-11-10 12:05:48 - app.main - INFO - Received file upload: Brazil PSC Report.pdf
+2024-11-10 12:05:48 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 12:06:16 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-10 12:06:16 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 12:06:16 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 12:06:16 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 12:06:16 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 12:06:20 - app.main - INFO - Raw response received from LLM
+2024-11-10 12:06:20 - app.main - INFO - Successfully processed report
+2024-11-10 12:06:20 - app.main - INFO - Vessel name: STI LOBELIA
+2024-11-10 12:06:20 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 12:06:22 - app.main - INFO - Stored report in database with ID: c989d6da-e1a3-4006-a73e-1e4899d2ec3f
