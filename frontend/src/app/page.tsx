@@ -89,12 +89,16 @@ export default function Home() {
     formData.append('file', file);
 
     try {
-      const response = await axios.post<UploadResponse>('http://localhost:8000/upload', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-        withCredentials: false
-      });
+      const response = await axios.post<UploadResponse>(
+        `${process.env.NEXT_PUBLIC_API_URL}/upload`, 
+        formData, 
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+          },
+          withCredentials: false
+        }
+      );
       setParsedData(response.data.data);
       setError(null);
     } catch (err) {

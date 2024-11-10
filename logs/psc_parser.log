@@ -2471,3 +2471,27 @@ fastapi.exceptions.HTTPException: 500: Data extraction failed: 500: Invalid resp
 2024-11-10 21:43:04 - app.main - INFO - Vessel name: SUNNY STAR
 2024-11-10 21:43:04 - app.main - INFO - Number of deficiencies: 0
 2024-11-10 21:43:05 - app.main - INFO - Stored report in database with ID: b62d181d-6106-4167-8439-65d84ebf9feb
+2024-11-10 21:50:56 - app.main - INFO - Received file upload: STI Poplar PSC Inspection Report.pdf
+2024-11-10 21:50:56 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 21:51:40 - app.main - INFO - Parsed 9 pages from PDF
+2024-11-10 21:51:40 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 21:51:40 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 21:51:40 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 21:51:40 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 21:51:44 - app.main - INFO - Raw response received from LLM
+2024-11-10 21:51:44 - app.main - INFO - Successfully processed report
+2024-11-10 21:51:44 - app.main - INFO - Vessel name: STI POPLAR
+2024-11-10 21:51:44 - app.main - INFO - Number of deficiencies: 6
+2024-11-10 21:51:45 - app.main - INFO - Stored report in database with ID: bf139004-4c6f-41b7-8a78-9c6d43e5c310
+2024-11-10 21:58:36 - app.main - INFO - Received file upload: PSC Inspection Report Immingham Nov 2 2024.pdf
+2024-11-10 21:58:36 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 21:58:48 - app.main - INFO - Parsed 10 pages from PDF
+2024-11-10 21:58:48 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 21:58:48 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 21:58:48 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 21:58:48 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 21:58:52 - app.main - INFO - Raw response received from LLM
+2024-11-10 21:58:52 - app.main - INFO - Successfully processed report
+2024-11-10 21:58:52 - app.main - INFO - Vessel name: STI MERAUX
+2024-11-10 21:58:52 - app.main - INFO - Number of deficiencies: 13
+2024-11-10 21:58:54 - app.main - INFO - Stored report in database with ID: b354ecd4-da73-4774-820f-37340951715f
