@@ -2399,3 +2399,27 @@ fastapi.exceptions.HTTPException: 500: Data extraction failed: 500: Invalid resp
 2024-11-10 19:16:49 - app.main - INFO - Vessel name: STI LOBELIA
 2024-11-10 19:16:49 - app.main - INFO - Number of deficiencies: 1
 2024-11-10 19:16:50 - app.main - INFO - Stored report in database with ID: 5f1be76c-56b8-449e-96c9-fbf929d31084
+2024-11-10 21:15:04 - app.main - INFO - Received file upload: Sydney AMSA Report Feb 7 2024.pdf
+2024-11-10 21:15:04 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 21:15:09 - app.main - INFO - Parsed 3 pages from PDF
+2024-11-10 21:15:09 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 21:15:09 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 21:15:09 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 21:15:09 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 21:15:11 - app.main - INFO - Raw response received from LLM
+2024-11-10 21:15:11 - app.main - INFO - Successfully processed report
+2024-11-10 21:15:11 - app.main - INFO - Vessel name: STI MADISON
+2024-11-10 21:15:11 - app.main - INFO - Number of deficiencies: 1
+2024-11-10 21:15:14 - app.main - INFO - Stored report in database with ID: 99293276-e5fd-4dd7-a0d5-434633d31367
+2024-11-10 21:15:42 - app.main - INFO - Received file upload: PSC Antwerp Oct 4 2024.pdf
+2024-11-10 21:15:42 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 21:15:53 - app.main - INFO - Parsed 9 pages from PDF
+2024-11-10 21:15:53 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 21:15:53 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 21:15:53 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 21:15:53 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 21:15:56 - app.main - INFO - Raw response received from LLM
+2024-11-10 21:15:56 - app.main - INFO - Successfully processed report
+2024-11-10 21:15:56 - app.main - INFO - Vessel name: MARI BOYLE
+2024-11-10 21:15:56 - app.main - INFO - Number of deficiencies: 2
+2024-11-10 21:15:58 - app.main - INFO - Stored report in database with ID: 43c356cb-8501-4041-ae54-e6c21c0722c2
