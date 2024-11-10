@@ -1,4 +1,4 @@
-import { InspectionReport } from './models';
+import { InspectionReport } from '@/types/models';
 
 export interface UploadResponse {
   report_id: string;
