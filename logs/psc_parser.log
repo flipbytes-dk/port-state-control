@@ -2351,3 +2351,15 @@ fastapi.exceptions.HTTPException: 500: Data extraction failed: 500: Invalid resp
 2024-11-10 12:06:20 - app.main - INFO - Vessel name: STI LOBELIA
 2024-11-10 12:06:20 - app.main - INFO - Number of deficiencies: 1
 2024-11-10 12:06:22 - app.main - INFO - Stored report in database with ID: c989d6da-e1a3-4006-a73e-1e4899d2ec3f
+2024-11-10 16:28:45 - app.main - INFO - Received file upload: PSC Antwerp Oct 4 2024.pdf
+2024-11-10 16:28:45 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-10 16:29:26 - app.main - INFO - Parsed 9 pages from PDF
+2024-11-10 16:29:26 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 16:29:26 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-10 16:29:26 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-10 16:29:26 - app.main - INFO - Extracting structured data from markdown
+2024-11-10 16:29:30 - app.main - INFO - Raw response received from LLM
+2024-11-10 16:29:30 - app.main - INFO - Successfully processed report
+2024-11-10 16:29:30 - app.main - INFO - Vessel name: MARI BOYLE
+2024-11-10 16:29:30 - app.main - INFO - Number of deficiencies: 2
+2024-11-10 16:29:32 - app.main - INFO - Stored report in database with ID: a71a2109-3314-42e5-bb2e-2363c4b69ac1
