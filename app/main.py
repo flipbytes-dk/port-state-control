@@ -36,14 +36,17 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",  # Local development
-        "https://port-state-control.vercel.app",  # Your Vercel domain
+        "http://localhost:3000",  # Local development frontend
+        "http://localhost:8000",  # Local development backend
+        "https://port-state-control.vercel.app",  # Your Vercel frontend
+        "https://port-state-control.onrender.com",  # Your Render backend
         "https://port-state-control-git-main-flipbytes-dk.vercel.app",  # Preview deployments
         "https://port-state-control-flipbytes-dk.vercel.app"  # Other possible Vercel URLs
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"]
 )
 
 # Initialize LlamaParse with specific PSC parsing instructions
