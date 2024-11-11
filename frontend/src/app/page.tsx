@@ -11,7 +11,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import CertificateTable from '@/components/CertificateTable';
 import Image from 'next/image';
-import { UploadResponse } from '@/types/api';
+import { ParsedData, UploadResponse } from '@/types/api';
 
 interface Ship {
   name: string;
