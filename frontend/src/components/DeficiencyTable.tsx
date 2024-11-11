@@ -17,6 +17,7 @@ interface Deficiency {
   action_code: string | null;
   deadline: string | null;
   rectified_date: string | null;
+  remarks: string | null;
 }
 
 interface DeficiencyTableProps {
@@ -66,9 +67,6 @@ export default function DeficiencyTable({ deficiencies }: DeficiencyTableProps) 
         <div>
           <div className="flex items-center gap-3">
             <CardTitle>Deficiencies</CardTitle>
-            <span className="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">
-              Total: {validDeficiencies.length}
-            </span>
           </div>
           <p className="text-sm text-muted-foreground mt-1">
             The following deficiencies were identified during inspection
@@ -80,23 +78,27 @@ export default function DeficiencyTable({ deficiencies }: DeficiencyTableProps) 
           <Table>
             <TableHeader>
               <TableRow>
+                <TableHead>No.</TableHead>
                 <TableHead>Code</TableHead>
                 <TableHead>Description</TableHead>
                 <TableHead>Action Code</TableHead>
                 <TableHead>Action Taken</TableHead>
                 <TableHead>Deadline</TableHead>
                 <TableHead>Rectified Date</TableHead>
+                <TableHead>Remarks</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {validDeficiencies.map((deficiency, index) => (
                 <TableRow key={index}>
-                  <TableCell className="font-medium">{deficiency.code || 'N/A'}</TableCell>
+                  <TableCell className="font-medium">{index + 1}</TableCell>
+                  <TableCell>{deficiency.code || 'N/A'}</TableCell>
                   <TableCell>{deficiency.description || 'N/A'}</TableCell>
                   <TableCell>{deficiency.action_code || 'N/A'}</TableCell>
                   <TableCell>{deficiency.action_taken || 'N/A'}</TableCell>
                   <TableCell>{deficiency.deadline || 'N/A'}</TableCell>
                   <TableCell>{deficiency.rectified_date || 'N/A'}</TableCell>
+                  <TableCell>{deficiency.remarks || 'N/A'}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

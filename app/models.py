@@ -33,6 +33,7 @@ class Deficiency(BaseModel):
     action_code: Optional[str] = None
     deadline: Optional[str] = None
     rectified_date: Optional[str] = None
+    remarks: Optional[str] = None
 
 class InspectionReport(BaseModel):
     ship: Optional[Ship] = Field(default_factory=Ship)

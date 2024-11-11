@@ -32,16 +32,15 @@ DATA_DIR.mkdir(exist_ok=True)
 
 app = FastAPI()
 
-# Update CORS middleware
+# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",  # Local development frontend
-        "http://localhost:8000",  # Local development backend
-        "https://port-state-control.vercel.app",  # Your Vercel frontend
-        "https://port-state-control.onrender.com",  # Your Render backend
-        "https://port-state-control-git-main-flipbytes-dk.vercel.app",  # Preview deployments
-        "https://port-state-control-flipbytes-dk.vercel.app"  # Other possible Vercel URLs
+        "http://localhost:3000",    # Local frontend
+        "http://127.0.0.1:3000",    # Alternative local frontend URL
+        "http://localhost:8000",    # Local backend
+        "https://port-state-control.vercel.app",  # Production frontend
+        "https://port-state-control.onrender.com"  # Production backend
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -196,7 +195,8 @@ async def upload_file(file: UploadFile = File(...)):
                         "action_taken": "string or null",
                         "action_code": "string or null",
                         "deadline": "ISO date string or null",
-                        "rectified_date": "string or null"
+                        "rectified_date": "string or null",
+                        "remarks": "string or null"
                     }
                 ],
                 "last_port": "string or null",
@@ -205,7 +205,9 @@ async def upload_file(file: UploadFile = File(...)):
             }
 
             Process all information from all pages. If the same type of information appears on multiple pages,
-            combine it appropriately. For certificates and deficiencies, include all entries found throughout the document. Bear in mind that sometimes in deficiencies, non-conformities are marked as "x" and "-" means conformity. Read the report thoroughly to figure this out. Also remeber that for deficiencies if you find the values of `code`, `action_taken` and `action_code` to be null, then perhaps there are no deficiencies. 
+            combine it appropriately. For certificates and deficiencies, include all entries found throughout the document. Bear in mind that sometimes in deficiencies, non-conformities are marked as "x" and "-" means conformity. Read the report thoroughly to figure this out. Also remeber that for deficiencies if you find the values of `code`, `action_taken` and `action_code` to be null, then perhaps there are no deficiencies. In the deficiencies section, always provide detailed description of the deficiency. These details could also be in columns such as Additional Comments, or Remarks or any other column meaning the same thing and these must be added in the `remarks` field.
+            
+            You MUST extract ALL the deficiencies, even if the values of `code`, `action_taken` and `action_code` are null.
             
             Report content:
             {report_content}
@@ -278,3 +280,7 @@ async def upload_file(file: UploadFile = File(...)):
     except Exception as e:
         logger.error(f"Error processing upload: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/")
+async def root():
+    return {"message": "API is running"}
