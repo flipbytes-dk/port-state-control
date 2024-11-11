@@ -65,9 +65,7 @@ export default function DeficiencyTable({ deficiencies }: DeficiencyTableProps) 
       <CardHeader className="flex flex-row items-center space-x-4">
         <AlertTriangle className="h-6 w-6 text-red-500" />
         <div>
-          <div className="flex items-center gap-3">
-            <CardTitle>Deficiencies</CardTitle>
-          </div>
+          <CardTitle>Deficiencies</CardTitle>
           <p className="text-sm text-muted-foreground mt-1">
             The following deficiencies were identified during inspection
           </p>
@@ -91,8 +89,8 @@ export default function DeficiencyTable({ deficiencies }: DeficiencyTableProps) 
             <TableBody>
               {validDeficiencies.map((deficiency, index) => (
                 <TableRow key={index}>
-                  <TableCell className="font-medium">{index + 1}</TableCell>
-                  <TableCell>{deficiency.code || 'N/A'}</TableCell>
+                  <TableCell>{index + 1}</TableCell>
+                  <TableCell className="font-medium">{deficiency.code || 'N/A'}</TableCell>
                   <TableCell>{deficiency.description || 'N/A'}</TableCell>
                   <TableCell>{deficiency.action_code || 'N/A'}</TableCell>
                   <TableCell>{deficiency.action_taken || 'N/A'}</TableCell>

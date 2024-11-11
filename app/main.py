@@ -32,7 +32,7 @@ DATA_DIR.mkdir(exist_ok=True)
 
 app = FastAPI()
 
-# Add CORS middleware
+# Update CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -205,9 +205,7 @@ async def upload_file(file: UploadFile = File(...)):
             }
 
             Process all information from all pages. If the same type of information appears on multiple pages,
-            combine it appropriately. For certificates and deficiencies, include all entries found throughout the document. Bear in mind that sometimes in deficiencies, non-conformities are marked as "x" and "-" means conformity. Read the report thoroughly to figure this out. Also remeber that for deficiencies if you find the values of `code`, `action_taken` and `action_code` to be null, then perhaps there are no deficiencies. In the deficiencies section, always provide detailed description of the deficiency. These details could also be in columns such as Additional Comments, or Remarks or any other column meaning the same thing and these must be added in the `remarks` field.
-            
-            You MUST extract ALL the deficiencies, even if the values of `code`, `action_taken` and `action_code` are null.
+            combine it appropriately. For certificates and deficiencies, include all entries found throughout the document. Bear in mind that sometimes in deficiencies, non-conformities are marked as "x" and "-" means conformity. Read the report thoroughly to figure this out. Also remeber that for deficiencies if you find the values of `code`, `action_taken` and `action_code` to be null, then perhaps there are no deficiencies. In the section on deficiencies, if you find columns like `additional comments`, `remarks` or something similar to this, be sure to club them all together in `remarks` column. You MUST NOT leave any information out especially when it comes to deficiencies. extract all of them.
             
             Report content:
             {report_content}
@@ -280,7 +278,3 @@ async def upload_file(file: UploadFile = File(...)):
     except Exception as e:
         logger.error(f"Error processing upload: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
-
-@app.get("/")
-async def root():
-    return {"message": "API is running"}

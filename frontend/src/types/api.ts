@@ -1,8 +1,10 @@
 import { InspectionReport } from '@/types/models';
 
-export interface UploadResponse {
-  report_id: string;
-  data: InspectionReport;
+export interface Certificate {
+  title: string | null;
+  issuing_authority: string | null;
+  issue_date: string | null;
+  expiry_date: string | null;
 }
 
 export interface Deficiency {
@@ -12,5 +14,12 @@ export interface Deficiency {
   action_code: string | null;
   deadline: string | null;
   rectified_date: string | null;
-  remarks: string | null;
+}
+
+export interface UploadResponse {
+  report_id: string;
+  data: {
+    certificates: Certificate[];
+    deficiencies: Deficiency[];
+  };
 } 

@@ -78,27 +78,6 @@ export default function Home() {
     }
   };
 
-  const handleDragOver = (e: React.DragEvent<HTMLLabelElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-  };
-
-  const handleDrop = (e: React.DragEvent<HTMLLabelElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-    
-    const droppedFiles = Array.from(e.dataTransfer.files);
-    if (droppedFiles.length > 0) {
-      const droppedFile = droppedFiles[0];
-      if (droppedFile.type === 'application/pdf') {
-        setFile(droppedFile);
-        setError(null);
-      } else {
-        setError('Please upload a PDF file');
-      }
-    }
-  };
-
   const handleUpload = async () => {
     if (!file) {
       setError('Please select a file first');
@@ -168,11 +147,7 @@ export default function Home() {
             <Card className="max-w-xl mx-auto mb-8 bg-background/95 backdrop-blur-sm">
               <CardContent className="pt-6">
                 <div className="flex items-center justify-center w-full">
-                  <label 
-                    className="flex flex-col items-center justify-center w-full h-64 border-2 border-dashed rounded-lg cursor-pointer hover:bg-accent hover:bg-opacity-50 border-border"
-                    onDragOver={handleDragOver}
-                    onDrop={handleDrop}
-                  >
+                  <label className="flex flex-col items-center justify-center w-full h-64 border-2 border-dashed rounded-lg cursor-pointer hover:bg-accent hover:bg-opacity-50 border-border">
                     <div className="flex flex-col items-center justify-center pt-5 pb-6">
                       <Upload className="w-12 h-12 mb-4 text-muted-foreground" />
                       <p className="mb-2 text-sm text-muted-foreground">
@@ -183,7 +158,7 @@ export default function Home() {
                     <input
                       type="file"
                       className="hidden"
-                      accept=".pdf,application/pdf"
+                      accept=".pdf"
                       onChange={handleFileChange}
                     />
                   </label>

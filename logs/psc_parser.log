@@ -2591,3 +2591,83 @@ fastapi.exceptions.HTTPException: 500: Data extraction failed: 500: Invalid resp
 2024-11-11 13:25:08 - app.main - INFO - Vessel name: STI MERAUX
 2024-11-11 13:25:08 - app.main - INFO - Number of deficiencies: 13
 2024-11-11 13:25:10 - app.main - INFO - Stored report in database with ID: 3d2c7e56-004c-4345-93d3-6a583b0eaa40
+2024-11-11 13:30:18 - app.main - INFO - Received file upload: PSC inspection report @ Immingham 02-Nov-2024.pdf
+2024-11-11 13:30:18 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-11 13:30:19 - app.main - INFO - Parsed 0 pages from PDF
+2024-11-11 13:30:19 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 13:30:19 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 13:30:19 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-11 13:30:19 - app.main - INFO - Extracting structured data from markdown
+2024-11-11 13:30:20 - app.main - INFO - Raw response received from LLM
+2024-11-11 13:30:20 - app.validators - WARNING - Non-standard deficiency code format at index 0: ISPS-1
+2024-11-11 13:30:20 - app.validators - WARNING - Non-standard deficiency code format at index 1: ISM-2
+2024-11-11 13:30:20 - app.main - INFO - Successfully processed report
+2024-11-11 13:30:20 - app.main - INFO - Vessel name: MV Golden Eagle
+2024-11-11 13:30:20 - app.main - INFO - Number of deficiencies: 3
+2024-11-11 13:30:21 - app.main - INFO - Stored report in database with ID: 4b061e01-4824-437a-8a4e-8d2038e24d1f
+2024-11-11 13:32:16 - app.main - INFO - Received file upload: PSC inspection report @ Immingham 02-Nov-2024.pdf
+2024-11-11 13:32:16 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-11 13:32:17 - app.main - INFO - Parsed 0 pages from PDF
+2024-11-11 13:32:17 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 13:32:17 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 13:32:17 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-11 13:32:17 - app.main - INFO - Extracting structured data from markdown
+2024-11-11 13:32:18 - app.main - INFO - Raw response received from LLM
+2024-11-11 13:32:18 - app.validators - WARNING - Non-standard deficiency code format at index 0: ISPS-1
+2024-11-11 13:32:18 - app.validators - WARNING - Non-standard deficiency code format at index 1: ISM-2
+2024-11-11 13:32:18 - app.validators - WARNING - Non-standard deficiency code format at index 2: MARPOL-1
+2024-11-11 13:32:18 - app.main - INFO - Successfully processed report
+2024-11-11 13:32:18 - app.main - INFO - Vessel name: MV Golden Horizon
+2024-11-11 13:32:18 - app.main - INFO - Number of deficiencies: 3
+2024-11-11 13:32:19 - app.main - INFO - Stored report in database with ID: 2f725c62-1068-4e89-8b8d-015fb52b7fba
+2024-11-11 13:33:54 - app.main - INFO - Received file upload: PSC inspection report @ Immingham 02-Nov-2024.pdf
+2024-11-11 13:33:54 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-11 13:33:55 - app.main - INFO - Parsed 0 pages from PDF
+2024-11-11 13:33:55 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 13:33:55 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 13:33:55 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-11 13:33:55 - app.main - INFO - Extracting structured data from markdown
+2024-11-11 13:33:56 - app.main - INFO - Raw response received from LLM
+2024-11-11 13:33:56 - app.validators - WARNING - Non-standard IMO number format: 9876543210
+2024-11-11 13:33:56 - app.validators - WARNING - Non-standard deficiency code format at index 0: ISPS-1
+2024-11-11 13:33:56 - app.validators - WARNING - Non-standard deficiency code format at index 1: ISM-2
+2024-11-11 13:33:56 - app.main - INFO - Successfully processed report
+2024-11-11 13:33:56 - app.main - INFO - Vessel name: MV Starlight
+2024-11-11 13:33:56 - app.main - INFO - Number of deficiencies: 3
+2024-11-11 13:33:57 - app.main - INFO - Stored report in database with ID: 069ad87f-2429-485d-8558-f2b127ef7fd9
+2024-11-11 13:50:27 - app.main - INFO - Received file upload: PSC inspection report @ Immingham 02-Nov-2024.pdf
+2024-11-11 13:50:27 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-11 13:50:39 - app.main - INFO - Parsed 10 pages from PDF
+2024-11-11 13:50:39 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 13:50:39 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 13:50:39 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-11 13:50:39 - app.main - INFO - Extracting structured data from markdown
+2024-11-11 13:50:43 - app.main - INFO - Raw response received from LLM
+2024-11-11 13:50:43 - app.main - INFO - Successfully processed report
+2024-11-11 13:50:43 - app.main - INFO - Vessel name: STI MERAUX
+2024-11-11 13:50:43 - app.main - INFO - Number of deficiencies: 13
+2024-11-11 13:50:45 - app.main - INFO - Stored report in database with ID: 6ec727b3-6344-4eda-b93e-381a22d7e3a9
+2024-11-11 14:23:02 - app.main - INFO - Received file upload: PSC inspection report @ Immingham 02-Nov-2024.pdf
+2024-11-11 14:23:02 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-11 14:23:15 - app.main - INFO - Parsed 10 pages from PDF
+2024-11-11 14:23:15 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 14:23:15 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 14:23:15 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-11 14:23:15 - app.main - INFO - Extracting structured data from markdown
+2024-11-11 14:23:20 - app.main - INFO - Raw response received from LLM
+2024-11-11 14:23:20 - app.main - INFO - Successfully processed report
+2024-11-11 14:23:20 - app.main - INFO - Vessel name: STI MERAUX
+2024-11-11 14:23:20 - app.main - INFO - Number of deficiencies: 13
+2024-11-11 14:23:22 - app.main - INFO - Stored report in database with ID: 9cea256c-5254-4ebb-97b3-56b809d39530
+2024-11-11 14:24:03 - app.main - INFO - Received file upload: PSC Paris MoU Sillamae Mar 8 2024.pdf
+2024-11-11 14:24:03 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-11 14:24:46 - app.main - INFO - Parsed 6 pages from PDF
+2024-11-11 14:24:46 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 14:24:46 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 14:24:46 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-11 14:24:46 - app.main - INFO - Extracting structured data from markdown
+2024-11-11 14:24:49 - app.main - INFO - Raw response received from LLM
+2024-11-11 14:24:49 - app.main - INFO - Successfully processed report
+2024-11-11 14:24:49 - app.main - INFO - Vessel name: STI HAMMERSMITH
+2024-11-11 14:24:49 - app.main - INFO - Number of deficiencies: 1
+2024-11-11 14:24:50 - app.main - INFO - Stored report in database with ID: c0f762c9-7cf9-4083-a118-6850f8a3c648
