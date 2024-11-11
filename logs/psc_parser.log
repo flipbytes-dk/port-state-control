@@ -2707,3 +2707,15 @@ fastapi.exceptions.HTTPException: 500: Data extraction failed: 500: Invalid resp
 2024-11-11 14:31:39 - app.main - INFO - Vessel name: STI ESLES II
 2024-11-11 14:31:39 - app.main - INFO - Number of deficiencies: 1
 2024-11-11 14:31:40 - app.main - INFO - Stored report in database with ID: 99e201c6-69df-4dd7-94f6-109d8cb7ba9d
+2024-11-11 14:35:27 - app.main - INFO - Received file upload: PSC Form A&B Anchorage Alaska Jan 11 2024.pdf
+2024-11-11 14:35:27 - app.main - INFO - Starting PDF parsing with LlamaParse
+2024-11-11 14:35:35 - app.main - INFO - Parsed 4 pages from PDF
+2024-11-11 14:35:35 - app.main - INFO - Attempting to save markdown to: /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 14:35:35 - app.main - INFO - Successfully saved parsed markdown to /Users/dhirajkhanna/Documents/PSC/data/temp.md
+2024-11-11 14:35:35 - app.main - INFO - Successfully parsed PDF to markdown
+2024-11-11 14:35:35 - app.main - INFO - Extracting structured data from markdown
+2024-11-11 14:35:37 - app.main - INFO - Raw response received from LLM
+2024-11-11 14:35:37 - app.main - INFO - Successfully processed report
+2024-11-11 14:35:37 - app.main - INFO - Vessel name: STI ESLES II
+2024-11-11 14:35:37 - app.main - INFO - Number of deficiencies: 1
+2024-11-11 14:35:38 - app.main - INFO - Stored report in database with ID: 11399d50-ff61-48b7-88a1-a0fcd19bd29d

@@ -11,62 +11,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import CertificateTable from '@/components/CertificateTable';
 import Image from 'next/image';
-import { ParsedData, UploadResponse } from '@/types/api';
-
-interface Ship {
-  name: string;
-  imo_number: string;
-  flag: string;
-  ship_type: string;
-  gross_tonnage: number;
-  call_sign: string;
-  deadweight: number;
-  company: string;
-  registered_owner: string;
-}
-
-interface Inspector {
-  name: string;
-  id: string | null;
-  authority: string;
-  office: string;
-  contact: string;
-}
-
-interface Certificate {
-  title: string | null;
-  issuing_authority: string | null;
-  issue_date: string | null;
-  expiry_date: string | null;
-}
-
-interface Deficiency {
-  code: string | null;
-  description: string | null;
-  action_taken: string | null;
-  action_code: string | null;
-  deadline: string | null;
-  rectified_date: string | null;
-}
-
-interface ParsedData {
-  ship: Ship;
-  inspector: Inspector;
-  inspection_date: string;
-  port_name: string;
-  inspection_type: string;
-  areas_inspected: string[];
-  operational_controls: string[];
-  certificates: Certificate[];
-  deficiencies: Deficiency[];
-  last_port: string | null;
-  next_port: string | null;
-  detained: boolean;
-}
+import type { UploadResponse } from '@/types/api';
 
 export default function Home() {
   const [file, setFile] = useState<File | null>(null);
-  const [parsedData, setParsedData] = useState<ParsedData | null>(null);
+  const [parsedData, setParsedData] = useState<UploadResponse['data'] | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
