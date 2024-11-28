@@ -96,7 +96,7 @@ parser = LlamaParse(
 # Initialize Groq LLM
 llm = Groq(
     api_key=os.getenv("GROQ_API_KEY"),
-    model="llama-3.2-11b-text-preview"
+    model="llama-3.2-11b-vision-preview"
 )
 
 # Add this after FastAPI initialization
